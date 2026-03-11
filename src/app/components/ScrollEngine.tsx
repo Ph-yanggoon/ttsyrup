@@ -27,7 +27,7 @@ if (typeof window !== "undefined") {
 }
 
 // ── Shared scroll velocity (px/sec) ──────────────
-// Updated every frame. Read via getScrollVelocity().
+// Updated via Lenis scroll event (no separate RAF loop).
 let _scrollVelocity = 0;
 export function getScrollVelocity(): number {
   return _scrollVelocity;
@@ -53,33 +53,23 @@ export default function ScrollEngine() {
     gsap.ticker.add(rafCallback);
     gsap.ticker.lagSmoothing(0);
 
-    /* ── 3. Scroll Progress → CSS Custom Prop ──── */
-    lenis.on("scroll", ({ progress }: { progress: number }) => {
+    /* ── 3. Scroll Progress + Velocity → via Lenis event ── */
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    lenis.on("scroll", (e: any) => {
       document.documentElement.style.setProperty(
         "--scroll-progress",
-        String(progress)
+        String(e.progress ?? 0)
       );
+      _scrollVelocity = Math.abs(e.velocity ?? 0);
     });
 
-    /* ── 4. Scroll Velocity Tracking ───────────── */
-    let lastScrollY = window.scrollY;
-    let lastTime = performance.now();
-    const velocityTracker = () => {
-      const now = performance.now();
-      const dt = now - lastTime;
-      if (dt > 16) {
-        _scrollVelocity =
-          (Math.abs(window.scrollY - lastScrollY) / dt) * 1000;
-        lastScrollY = window.scrollY;
-        lastTime = now;
-      }
-    };
-    gsap.ticker.add(velocityTracker);
+    // Expose Lenis instance for external access (e.g. scrollTo)
+    (window as unknown as Record<string, unknown>).__lenis = lenis;
 
-    /* ── 5. Refresh ScrollTrigger positions ─────── */
-    const refreshTimeout = setTimeout(() => {
+    /* ── 4. Refresh ScrollTrigger after fonts load ─────── */
+    const fontsReady = document.fonts.ready.then(() => {
       ScrollTrigger.refresh();
-    }, 500);
+    });
 
     /* ── 6. data-reveal IntersectionObserver ────── */
     const revealTimeout = setTimeout(() => {
@@ -107,11 +97,11 @@ export default function ScrollEngine() {
 
     /* ── Cleanup ───────────────────────────────── */
     return () => {
-      clearTimeout(refreshTimeout);
+      void fontsReady; // ensure promise reference is held
       clearTimeout(revealTimeout);
       observerRef.current?.disconnect();
       gsap.ticker.remove(rafCallback);
-      gsap.ticker.remove(velocityTracker);
+      delete (window as unknown as Record<string, unknown>).__lenis;
       lenis.destroy();
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };

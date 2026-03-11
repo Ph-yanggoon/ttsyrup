@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import {
   useScrollAnimation,
   useProgressiveReveal,
@@ -24,7 +25,7 @@ import {
 /* ── Anthocyanin data for animated chart ── */
 const ANTHOCYANIN_DATA = [
   {
-    label: "엘더베리",
+    labelKey: "anthocyanin.labels.elderberry",
     min: 600,
     max: 1400,
     color: "var(--color-elderberry)",
@@ -32,7 +33,7 @@ const ANTHOCYANIN_DATA = [
     gradientTo: "var(--color-elderberry)",
   },
   {
-    label: "블루베리",
+    labelKey: "anthocyanin.labels.blueberry",
     min: 60,
     max: 300,
     color: "var(--color-elderberry-300)",
@@ -43,23 +44,23 @@ const ANTHOCYANIN_DATA = [
 
 /* ── Nutrition data ── */
 const MINERALS = [
-  { name: "칼륨", value: "280mg" },
-  { name: "인", value: "39mg" },
-  { name: "칼슘", value: "38mg" },
-  { name: "나트륨", value: "6mg" },
-  { name: "마그네슘", value: "5mg" },
-  { name: "철", value: "1.6mg" },
-  { name: "아연", value: "0.11mg" },
+  { nameKey: "nutritionTable.minerals.potassium", value: "280mg" },
+  { nameKey: "nutritionTable.minerals.phosphorus", value: "39mg" },
+  { nameKey: "nutritionTable.minerals.calcium", value: "38mg" },
+  { nameKey: "nutritionTable.minerals.sodium", value: "6mg" },
+  { nameKey: "nutritionTable.minerals.magnesium", value: "5mg" },
+  { nameKey: "nutritionTable.minerals.iron", value: "1.6mg" },
+  { nameKey: "nutritionTable.minerals.zinc", value: "0.11mg" },
 ];
 
 const VITAMINS = [
-  { name: "비타민C", value: "36mg" },
-  { name: "나이아신", value: "0.5mg" },
-  { name: "피라독신", value: "0.23mg" },
-  { name: "티아민", value: "0.07mg" },
-  { name: "리보플라빈", value: "0.06mg" },
-  { name: "비타민A", value: "30\u00B5g RE" },
-  { name: "엽산", value: "6\u00B5g" },
+  { nameKey: "nutritionTable.vitamins.vitaminC", value: "36mg" },
+  { nameKey: "nutritionTable.vitamins.niacin", value: "0.5mg" },
+  { nameKey: "nutritionTable.vitamins.pyridoxine", value: "0.23mg" },
+  { nameKey: "nutritionTable.vitamins.thiamine", value: "0.07mg" },
+  { nameKey: "nutritionTable.vitamins.riboflavin", value: "0.06mg" },
+  { nameKey: "nutritionTable.vitamins.vitaminA", value: "30\u00B5g RE" },
+  { nameKey: "nutritionTable.vitamins.folate", value: "6\u00B5g" },
 ];
 
 /* ── Animated bar component ── */
@@ -72,13 +73,14 @@ function AnthocyaninBar({
   maxVal: number;
   inView: boolean;
 }) {
+  const t = useTranslations("elderberry");
   const widthPct = (item.max / maxVal) * 100;
 
   return (
     <div className="mb-6 last:mb-0">
       <div className="flex items-baseline justify-between mb-2">
         <span className="text-body font-semibold" style={{ color: item.color }}>
-          {item.label}
+          {t(item.labelKey)}
         </span>
         <span className="text-body-sm text-text-secondary font-medium tabular-nums">
           {item.min.toLocaleString()}~{item.max.toLocaleString()}mg / 100g
@@ -86,20 +88,23 @@ function AnthocyaninBar({
       </div>
       <div className="relative h-10 sm:h-12 rounded-xl overflow-hidden bg-elderberry-50/60">
         <div
-          className="absolute inset-y-0 left-0 rounded-xl transition-all ease-out"
+          className="absolute inset-y-0 left-0 rounded-xl"
           style={{
-            width: inView ? `${widthPct}%` : "0%",
-            transitionDuration: "1.6s",
-            transitionDelay: "0.3s",
+            width: `${widthPct}%`,
+            transform: inView ? "scaleX(1)" : "scaleX(0)",
+            transformOrigin: "left",
+            transition: "transform 1.6s ease-out 0.3s",
             background: `linear-gradient(90deg, ${item.gradientFrom}, ${item.gradientTo})`,
+            willChange: "transform",
           }}
         />
         <div
           className="absolute inset-y-0 left-0 rounded-xl opacity-30"
           style={{
-            width: inView ? `${widthPct}%` : "0%",
-            transitionDuration: "1.6s",
-            transitionDelay: "0.3s",
+            width: `${widthPct}%`,
+            transform: inView ? "scaleX(1)" : "scaleX(0)",
+            transformOrigin: "left",
+            transition: "transform 1.6s ease-out 0.3s",
             background:
               "linear-gradient(90deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%)",
             backgroundSize: "200% 100%",
@@ -122,6 +127,7 @@ function NutritionRow({ name, value }: { name: string; value: string }) {
 }
 
 export default function ElderberryStory() {
+  const t = useTranslations("elderberry");
   const sectionRef = useRef<HTMLElement>(null);
   const chartRef = useRef<HTMLDivElement>(null);
   const [chartInView, setChartInView] = useState(false);
@@ -243,34 +249,31 @@ export default function ElderberryStory() {
 
       <div className="section-inner relative z-10">
         {/* ═══════ 1. Opening Headline ═══════ */}
-        {/* Change 1: Remove comma, line break before 엘더베리 */}
-        {/* Change 2: Subtitle — only "블루베리보다 풍부한 안토시아닌" */}
         <div className="text-center mb-10 sm:mb-14 lg:mb-16">
           <h2
             ref={headlineRef}
             className="font-bold text-text-primary leading-[1.2] tracking-[-0.025em] mb-5 lg:mb-6"
             style={{ fontSize: "var(--font-size-heading-xl)" }}
           >
-            유럽이 수백 년간 지켜온 보랏빛 열매
+            {t("headline.line1")}
             <br />
-            <span className="text-gradient-elderberry">엘더베리</span>
+            <span className="text-gradient-elderberry">{t("headline.highlight")}</span>
           </h2>
 
           <p
             ref={subRef}
             className="text-body-lg text-text-secondary leading-relaxed max-w-[560px] mx-auto"
           >
-            블루베리보다 풍부한 안토시아닌
+            {t("subtitle")}
           </p>
         </div>
 
         {/* ═══════ 3. Elderberry Transparent Image ═══════ */}
-        {/* Change 3: Insert elderberry transparent image */}
         <div className="flex justify-center mb-14 sm:mb-18 lg:mb-24" data-reveal>
           <div className="relative w-[280px] h-[280px] sm:w-[360px] sm:h-[360px] lg:w-[420px] lg:h-[420px]">
             <Image
               src="/ingredients/elderberry-transparent.png"
-              alt="엘더베리 열매"
+              alt={t("imageAlt")}
               fill
               className="object-contain drop-shadow-lg"
               sizes="(max-width: 640px) 280px, (max-width: 1024px) 360px, 420px"
@@ -280,7 +283,6 @@ export default function ElderberryStory() {
         </div>
 
         {/* ═══════ 2. Origin Story ═══════ */}
-        {/* Change 4: Always break line (remove hidden sm:block) */}
         <div className="max-w-[800px] mx-auto mb-20 sm:mb-24 lg:mb-32">
           <div className="flex items-center gap-3 mb-4" data-reveal data-reveal-delay="0">
             <div
@@ -308,7 +310,7 @@ export default function ElderberryStory() {
               className="badge badge-elderberry"
               style={{ fontSize: "var(--font-size-caption)" }}
             >
-              원산지 이야기
+              {t("origin.badge")}
             </span>
           </div>
 
@@ -317,29 +319,22 @@ export default function ElderberryStory() {
             className="font-bold text-text-primary leading-[1.25] tracking-[-0.02em] mb-4"
             style={{ fontSize: "var(--font-size-heading-md)" }}
           >
-            오스트리아 슈타이어마르크에서 자란
+            {t("origin.title.line1")}
             <br />
-            프리미엄 엘더베리
+            {t("origin.title.line2")}
           </h3>
 
           <div ref={originBodyRef} className="text-body text-text-secondary leading-[1.85] space-y-4">
-            <p>
-              셀로맥스 어린이튼튼시럽의 엘더베리는 오스트리아
-              슈타이어마르크(Steiermark) 지역에서 재배한 Haschberg 품종을
-              사용합니다.
-            </p>
-            <p>
-              유럽에서 수백 년간 환절기 건강 관리에 활용되어 온 전통
-              원료입니다.
-            </p>
+            <p>{t("origin.body1")}</p>
+            <p>{t("origin.body2")}</p>
           </div>
 
-          {/* Change 5: Insert elderberry-2 image below origin text */}
+          {/* Origin image */}
           <div className="mt-8" data-reveal data-reveal-delay="0.15">
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
                 src="/ingredients/elderberry-2.png"
-                alt="오스트리아 슈타이어마르크 엘더베리"
+                alt={t("origin.imageAlt")}
                 fill
                 className="object-cover"
                 sizes="(max-width: 640px) 100vw, 800px"
@@ -365,24 +360,23 @@ export default function ElderberryStory() {
               </svg>
             </div>
             <span className="badge badge-elderberry text-caption">
-              안토시아닌 함량 비교
+              {t("anthocyanin.badge")}
             </span>
           </div>
 
-          {/* Change 6: No line break — single line */}
           <h3
             ref={chartTitleRef}
             className="font-bold text-text-primary leading-[1.25] tracking-[-0.02em] mb-3"
             style={{ fontSize: "var(--font-size-heading-md)" }}
           >
-            안토시아닌 — 보랏빛에 담긴 항산화 성분
+            {t("anthocyanin.title")}
           </h3>
 
           <p
             className="text-body text-text-secondary leading-[1.85] mb-8"
             data-reveal
           >
-            엘더베리의 깊은 보랏빛은 안토시아닌이 풍부하다는 증거입니다.
+            {t("anthocyanin.intro")}
           </p>
 
           {/* Animated bar chart */}
@@ -392,7 +386,7 @@ export default function ElderberryStory() {
           >
             {ANTHOCYANIN_DATA.map((item) => (
               <AnthocyaninBar
-                key={item.label}
+                key={item.labelKey}
                 item={item}
                 maxVal={maxAnthocyanin}
                 inView={chartInView}
@@ -401,31 +395,25 @@ export default function ElderberryStory() {
 
             <div className="flex justify-between mt-4 pt-3 border-t border-border-subtle">
               <span className="text-caption text-text-tertiary">0</span>
-              <span className="text-caption text-text-tertiary">mg / 100g</span>
+              <span className="text-caption text-text-tertiary">{t("anthocyanin.chartUnit")}</span>
               <span className="text-caption text-text-tertiary">1,400</span>
             </div>
           </div>
 
           <p className="text-[11px] text-text-tertiary/70 text-right mb-6">
-            출처: Wu et al., <em>J Agric Food Chem</em> (2006)
+            {t("anthocyanin.citation")}
           </p>
 
-          {/* Change 7: Anthocyanin explanation paragraph */}
+          {/* Anthocyanin explanation paragraph */}
           <div className="card-surface p-5 sm:p-6" data-reveal>
             <p className="text-body-sm text-text-secondary leading-[1.9]">
-              <strong className="text-text-primary">안토시아닌(Anthocyanin)</strong>은
-              식물의 꽃, 과일, 잎 등에 존재하는 천연 색소로, 보라색&middot;빨간색&middot;파란색을
-              만들어내는 플라보노이드 계열의 성분입니다. 항산화 영양소로 알려져 있으며,
-              색이 진할수록 안토시아닌 함량이 높은 경향이 있습니다. 엘더베리는 대표적인
-              안토시아닌 공급원 중 하나로, 블루베리 대비 최대 약 4.7배 높은 안토시아닌
-              함량이 보고되어 있습니다.
+              <strong className="text-text-primary">{t("anthocyanin.explanationKeyword")}</strong>
+              {t("anthocyanin.explanation").slice(t("anthocyanin.explanationKeyword").length)}
             </p>
           </div>
         </div>
 
         {/* ═══════ 4. Elderberry Nutrition Table ═══════ */}
-        {/* Change 8: Clinical section deleted */}
-        {/* Change 9: Replaced with nutrition table */}
         <div className="max-w-[800px] mx-auto mb-14 sm:mb-16">
           <div className="flex items-center gap-3 mb-4" data-reveal>
             <div
@@ -442,7 +430,7 @@ export default function ElderberryStory() {
               </svg>
             </div>
             <span className="badge badge-elderberry text-caption">
-              엘더베리의 영양성분
+              {t("nutritionTable.badge")}
             </span>
           </div>
 
@@ -451,7 +439,7 @@ export default function ElderberryStory() {
             className="font-bold text-text-primary leading-[1.25] tracking-[-0.02em] mb-8"
             style={{ fontSize: "var(--font-size-heading-md)" }}
           >
-            영양가득 엘더베리의 영양성분
+            {t("nutritionTable.title")}
           </h3>
 
           {/* Nutrition Table Card */}
@@ -472,9 +460,6 @@ export default function ElderberryStory() {
             />
 
             <div className="relative z-10 p-6 sm:p-8 lg:p-10">
-              {/* Desktop: 3 columns — Minerals | Center Badge | Vitamins */}
-              {/* Mobile: Center badge on top, then 2 columns side by side */}
-
               {/* Center badge — visible on mobile at top */}
               <div className="flex justify-center mb-8 sm:hidden">
                 <div
@@ -486,13 +471,13 @@ export default function ElderberryStory() {
                 >
                   <div>
                     <p className="text-white font-bold text-[1rem] leading-tight">
-                      영양가득
+                      {t("nutritionTable.centerBadge.line1")}
                     </p>
                     <p className="text-white font-bold text-[1rem] leading-tight">
-                      엘더베리의
+                      {t("nutritionTable.centerBadge.line2")}
                     </p>
                     <p className="text-white font-bold text-[1rem] leading-tight">
-                      영양성분
+                      {t("nutritionTable.centerBadge.line3")}
                     </p>
                   </div>
                 </div>
@@ -509,11 +494,11 @@ export default function ElderberryStory() {
                     >
                       Minerals
                     </h4>
-                    <p className="text-white/40 text-[0.75rem] mt-0.5">(per 100g)</p>
+                    <p className="text-white/40 text-[0.75rem] mt-0.5">{t("nutritionTable.perUnit")}</p>
                   </div>
                   <div>
                     {MINERALS.map((m) => (
-                      <NutritionRow key={m.name} name={m.name} value={m.value} />
+                      <NutritionRow key={m.nameKey} name={t(m.nameKey)} value={m.value} />
                     ))}
                   </div>
                 </div>
@@ -529,13 +514,13 @@ export default function ElderberryStory() {
                   >
                     <div>
                       <p className="text-white font-bold text-[1.1rem] lg:text-[1.25rem] leading-tight">
-                        영양가득
+                        {t("nutritionTable.centerBadge.line1")}
                       </p>
                       <p className="text-white font-bold text-[1.1rem] lg:text-[1.25rem] leading-tight">
-                        엘더베리의
+                        {t("nutritionTable.centerBadge.line2")}
                       </p>
                       <p className="text-white font-bold text-[1.1rem] lg:text-[1.25rem] leading-tight">
-                        영양성분
+                        {t("nutritionTable.centerBadge.line3")}
                       </p>
                     </div>
                   </div>
@@ -550,11 +535,11 @@ export default function ElderberryStory() {
                     >
                       Vitamins
                     </h4>
-                    <p className="text-white/40 text-[0.75rem] mt-0.5">(per 100g)</p>
+                    <p className="text-white/40 text-[0.75rem] mt-0.5">{t("nutritionTable.perUnit")}</p>
                   </div>
                   <div>
                     {VITAMINS.map((v) => (
-                      <NutritionRow key={v.name} name={v.name} value={v.value} />
+                      <NutritionRow key={v.nameKey} name={t(v.nameKey)} value={v.value} />
                     ))}
                   </div>
                 </div>
@@ -564,14 +549,14 @@ export default function ElderberryStory() {
 
           {/* Source citation */}
           <p className="text-[11px] text-text-tertiary/70 text-right mt-3">
-            출처: 농촌진흥청 국가표준식품성분표 &lsquo;엘더베리, 생것&rsquo; 기준
+            {t("nutritionTable.citation")}
           </p>
         </div>
 
         {/* ═══════ Section Disclaimer ═══════ */}
         <div className="text-center" data-reveal>
           <p className="text-caption text-text-primary">
-            해당 정보는 제품과 관련 없는 원료에 대한 설명입니다
+            {t("disclaimer")}
           </p>
         </div>
       </div>

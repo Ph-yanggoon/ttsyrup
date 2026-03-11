@@ -70,7 +70,8 @@ export function useScrollAnimation<T extends HTMLElement = HTMLDivElement>(
     } = options;
 
     // Always use fromTo for reliable ScrollTrigger behavior
-    const toVars = to || { opacity: 1, y: 0, scale: 1, filter: "none" };
+    // Note: filter removed from default — avoids unnecessary filter compositing on 13+ instances
+    const toVars = to || { opacity: 1, y: 0, scale: 1 };
     const tween = gsap.fromTo(el, { ...from, immediateRender: false }, {
       ...toVars,
       duration,

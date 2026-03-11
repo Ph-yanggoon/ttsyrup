@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import gsap from "gsap";
 
 /* ─────────────────────────────────────────────────
@@ -29,19 +30,19 @@ const VIS_GAP = 6; // px gap between visible product edges
 const PRODUCTS = [
   {
     src: "/products/syrup-box-transparent.png",
-    alt: "어린이튼튼시럽",
+    altKey: "products.syrup",
     bbox: { minX: 652, minY: 133, maxX: 1119, maxY: 1638 },
     zIndex: 2,
   },
   {
     src: "/products/stick-transparent.png",
-    alt: "어린이튼튼시럽스틱",
+    altKey: "products.stick",
     bbox: { minX: 477, minY: 153, maxX: 1295, maxY: 1618 },
     zIndex: 3,
   },
   {
     src: "/products/jjayo-40pack-transparent.png",
-    alt: "어린이튼튼짜요",
+    altKey: "products.jjayo",
     bbox: { minX: 437, minY: 133, maxX: 1334, maxY: 1638 },
     zIndex: 2,
   },
@@ -124,6 +125,7 @@ function computePositions(
 }
 
 export default function HeroSection() {
+  const t = useTranslations("hero");
   const sectionRef = useRef<HTMLElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const [positions, setPositions] = useState<ProductPos[] | null>(null);
@@ -133,14 +135,14 @@ export default function HeroSection() {
     const stage = stageRef.current;
     if (!stage) return;
 
-    const update = () => {
-      const { width, height } = stage.getBoundingClientRect();
-      setPositions(computePositions(width, height));
-    };
-
-    const ro = new ResizeObserver(update);
+    // Use contentRect from ResizeObserver entries (avoids forced synchronous layout)
+    const ro = new ResizeObserver((entries) => {
+      const { width, height } = entries[0].contentRect;
+      if (width > 0 && height > 0) {
+        setPositions(computePositions(width, height));
+      }
+    });
     ro.observe(stage);
-    update();
 
     return () => ro.disconnect();
   }, []);
@@ -164,7 +166,7 @@ export default function HeroSection() {
           gsap.set(".hero-product-stage", {
             opacity: 0,
             scale: 0.88,
-            filter: "blur(10px)",
+            /* filter: blur removed — animating blur on 3 product images causes heavy repaint */
           });
           gsap.set(".hero-body", { opacity: 0, y: 18 });
           gsap.set(".hero-cta", { opacity: 0, y: 18 });
@@ -197,7 +199,6 @@ export default function HeroSection() {
               {
                 opacity: 1,
                 scale: 1,
-                filter: "blur(0px)",
                 duration: 1.4,
                 ease: "power2.out",
               },
@@ -290,44 +291,44 @@ export default function HeroSection() {
           <div className="text-center lg:text-left order-2 lg:order-1">
             {/* Badges */}
             <div className="flex gap-2.5 justify-center lg:justify-start mb-5 lg:mb-7">
-              <span className="hero-badge badge badge-glass">약국 전용</span>
-              <span className="hero-badge badge badge-glass">만 1세부터</span>
+              <span className="hero-badge badge badge-glass">{t("badges.pharmacyOnly")}</span>
+              <span className="hero-badge badge badge-glass">{t("badges.fromAge1")}</span>
             </div>
 
             {/* ── Headcopy ── */}
             <h1 className="hero-headline font-bold text-white leading-[1.15] tracking-[-0.025em] mb-4 lg:mb-5 text-[clamp(1.85rem,4.5vw,3rem)]">
-              하루 한 번,
+              {t("headline.line1")}
               <br className="hidden lg:inline" />
-              {" "}엘더베리의 힘으로
+              {" "}{t("headline.line2")}
               <br />
-              <span className="text-gradient-warm">우리 아이 건강</span>을
-              채우다
+              <span className="text-gradient-warm">{t("headline.highlight")}</span>
+              {t("headline.suffix")}
             </h1>
 
             {/* ── Subcopy ── */}
             <p className="hero-sub text-body-lg text-white/60 leading-relaxed mb-3">
-              엘더베리 · 프리바이오틱스 · 아미노산 · 칼슘 · 비타민C · 비타민B
+              {t("subcopy.ingredients")}
             </p>
             <p className="hero-sub text-body-lg text-white/80 font-medium leading-relaxed mb-5 lg:mb-6">
-              6가지 핵심 영양소를 하나에 담은 어린이 영양 시럽
+              {t("subcopy.description")}
             </p>
 
             {/* ── Body text ── */}
             <p className="hero-body text-body text-white/50 leading-[1.75] mb-7 lg:mb-9 max-w-[480px] mx-auto lg:mx-0">
-              오스트리아산 프리미엄 엘더베리를 중심으로,
+              {t("body.line1")}
               <br className="hidden sm:block" />
-              성장기 어린이에게 꼭 필요한 영양소를 한 병에 설계했습니다.
+              {t("body.line2")}
               <br className="hidden sm:block" />
-              약국에서만 만날 수 있는 셀로맥스 어린이튼튼시럽.
+              {t("body.line3")}
             </p>
 
             {/* ── CTA Buttons ── */}
             <div className="flex flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
               <a href="#ingredient-cards" className="hero-cta btn-primary">
-                성분 자세히 보기 ↓
+                {t("cta.viewIngredients")}
               </a>
               <a href="#pharmacy-finder" className="hero-cta btn-glass">
-                가까운 약국 찾기
+                {t("cta.findPharmacy")}
               </a>
             </div>
           </div>
@@ -354,7 +355,7 @@ export default function HeroSection() {
               <div className="relative z-10 w-full h-full">
                 {positions?.map((pos, i) => (
                   <div
-                    key={PRODUCTS[i].alt}
+                    key={PRODUCTS[i].altKey}
                     className="absolute"
                     style={{
                       left: pos.left,
@@ -366,7 +367,7 @@ export default function HeroSection() {
                   >
                     <Image
                       src={PRODUCTS[i].src}
-                      alt={PRODUCTS[i].alt}
+                      alt={t(PRODUCTS[i].altKey)}
                       fill
                       priority
                       sizes="(max-width: 640px) 80vw, (max-width: 1024px) 50vw, 35vw"
@@ -385,7 +386,7 @@ export default function HeroSection() {
       {/* ═══════ Scroll Indicator ═══════ */}
       <div className="hero-scroll-hint absolute bottom-5 sm:bottom-7 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5">
         <span className="text-white/20 text-[9px] tracking-[0.2em] uppercase font-medium">
-          Scroll
+          {t("scrollHint")}
         </span>
         <div className="w-[18px] h-7 border border-white/[0.12] rounded-full flex justify-center pt-1.5">
           <div className="hero-scroll-dot w-[3px] h-[6px] rounded-full bg-white/25" />

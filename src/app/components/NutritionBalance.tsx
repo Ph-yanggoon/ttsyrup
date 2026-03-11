@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import { useTranslations } from "next-intl";
 import {
   useScrollAnimation,
   useProgressiveReveal,
@@ -20,12 +21,12 @@ import {
 
 /* ── Radar chart data: 6-axis nutrient balance ── */
 const RADAR_AXES = [
-  { label: "엘더베리", angle: -90 },
-  { label: "아미노산", angle: -30 },
-  { label: "프리바이오틱스", angle: 30 },
-  { label: "비타민B", angle: 90 },
-  { label: "비타민C", angle: 150 },
-  { label: "칼슘", angle: 210 },
+  { labelKey: "radarChart.axes.elderberry", angle: -90 },
+  { labelKey: "radarChart.axes.aminoAcid", angle: -30 },
+  { labelKey: "radarChart.axes.prebiotics", angle: 30 },
+  { labelKey: "radarChart.axes.vitaminB", angle: 90 },
+  { labelKey: "radarChart.axes.vitaminC", angle: 150 },
+  { labelKey: "radarChart.axes.calcium", angle: 210 },
 ];
 
 /* Values 0~1 for the filled radar polygon */
@@ -35,35 +36,32 @@ const RADAR_VALUES = [1.0, 0.88, 0.86, 0.87, 0.89, 0.89];
 const NUTRIENT_CARDS = [
   {
     icon: "🧬",
-    title: "단백질의 기초, 아미노산 7종",
-    body: "성장기 어린이의 몸은 매일 새로운 세포를 만들어냅니다. 그 기초가 되는 것이 바로 아미노산입니다. 셀로맥스는 BCAA(발린·류신·이소류신)를 포함한 7종의 아미노산을 담았습니다.",
-    detail:
-      "그중 L-아르기닌은 성장기 어린이의 건강한 발달을 돕는 것으로 알려진 반필수 아미노산이며, L-글루타민은 장 점막의 주요 에너지원으로 알려진 아미노산입니다.",
+    cardKey: "cards.aminoAcid",
     accentColor: "var(--color-elderberry)",
-    tags: ["BCAA 3종", "L-아르기닌", "L-글루타민", "+2종"],
   },
   {
     icon: "🦴",
-    title: "물에 녹는 칼슘, 그래서 다릅니다",
-    body: "칼슘은 많이 먹는 것보다 잘 흡수되는 것이 중요합니다. 셀로맥스의 수용성 발효 칼슘은 청정해역 패각을 자연 발효하여 만든 100% 수용성 이온화 칼슘입니다.",
-    detail:
-      "화학용매 없이 발효 공정만으로 추출해, 체내 흡수에 유리한 형태를 갖추었습니다.",
+    cardKey: "cards.calcium",
     accentColor: "var(--color-coral)",
-    tags: ["수용성 이온화", "자연 발효", "흡수 유리"],
   },
   {
     icon: "🌿",
-    title: "식물에서 온 비타민 B&C",
-    body: "구아바, 홀리바질, 레몬에는 비타민 B군이 인디언구스베리에는 비타민 C가 풍부하게 함유되어 있습니다.",
-    detail:
-      "어린이에게 필요한 비타민 B1·B2·B3·B5·B6·B9 6종과 비타민 C를 한 번에 섭취할 수 있습니다.",
+    cardKey: "cards.vitaminBC",
     accentColor: "var(--color-elderberry-400)",
-    tags: ["구아바", "홀리바질", "레몬", "인디언구스베리"],
   },
+];
+
+/* ── Quick stats data ── */
+const QUICK_STATS = [
+  { emoji: "✨", statKey: "quickStats.premium" },
+  { emoji: "💪", statKey: "quickStats.aminoAcid" },
+  { emoji: "🍋", statKey: "quickStats.vitaminBC" },
+  { emoji: "🐚", statKey: "quickStats.calcium" },
 ];
 
 /* ── Radar Chart SVG component ── */
 function RadarChart({ inView }: { inView: boolean }) {
+  const t = useTranslations("nutrition");
   const size = 320;
   const cx = size / 2;
   const cy = size / 2;
@@ -104,7 +102,7 @@ function RadarChart({ inView }: { inView: boolean }) {
       <svg
         viewBox={`0 0 ${size} ${size}`}
         className="w-full h-full"
-        aria-label="영양 밸런스 레이더 차트"
+        aria-label={t("radarChart.ariaLabel")}
       >
         {/* Grid rings */}
         {rings.map((scale) => (
@@ -187,7 +185,7 @@ function RadarChart({ inView }: { inView: boolean }) {
           className="fill-elderberry-600 text-[10px] font-bold"
           style={{ opacity: inView ? 1 : 0, transition: "opacity 0.8s ease 0.5s" }}
         >
-          영양 밸런스
+          {t("radarChart.centerLabel")}
         </text>
       </svg>
 
@@ -200,7 +198,7 @@ function RadarChart({ inView }: { inView: boolean }) {
 
         return (
           <span
-            key={axis.label}
+            key={axis.labelKey}
             className="absolute text-[11px] sm:text-xs font-medium text-elderberry-500 whitespace-nowrap -translate-x-1/2 -translate-y-1/2 transition-opacity duration-700"
             style={{
               left: `${leftPct}%`,
@@ -209,7 +207,7 @@ function RadarChart({ inView }: { inView: boolean }) {
               transitionDelay: `${0.6 + i * 0.08}s`,
             }}
           >
-            {axis.label}
+            {t(axis.labelKey)}
           </span>
         );
       })}
@@ -223,7 +221,9 @@ function NutrientCard({
 }: {
   card: (typeof NUTRIENT_CARDS)[number];
 }) {
+  const t = useTranslations("nutrition");
   const [expanded, setExpanded] = useState(false);
+  const tags = t.raw(`${card.cardKey}.tags`) as string[];
 
   return (
     <div className="nutrient-card card-surface group rounded-2xl p-6 sm:p-8 transition-shadow duration-300 hover:shadow-lg">
@@ -236,31 +236,33 @@ function NutrientCard({
           className="text-body-lg font-bold text-text-primary leading-snug"
           style={{ color: card.accentColor }}
         >
-          {card.title}
+          {t(`${card.cardKey}.title`)}
         </h3>
       </div>
 
       {/* Body */}
       <p className="text-body text-text-secondary leading-relaxed mb-3">
-        {card.body}
+        {t(`${card.cardKey}.body`)}
       </p>
 
       {/* Expandable detail */}
       <div
-        className="overflow-hidden transition-all duration-500 ease-out"
+        className="grid transition-[grid-template-rows,opacity] duration-500 ease-out"
         style={{
-          maxHeight: expanded ? "200px" : "0px",
+          gridTemplateRows: expanded ? "1fr" : "0fr",
           opacity: expanded ? 1 : 0,
         }}
       >
-        <p className="text-body-sm text-text-tertiary leading-relaxed pt-1 pb-3">
-          {card.detail}
-        </p>
+        <div className="overflow-hidden">
+          <p className="text-body-sm text-text-tertiary leading-relaxed pt-1 pb-3">
+            {t(`${card.cardKey}.detail`)}
+          </p>
+        </div>
       </div>
 
       {/* Tags */}
       <div className="flex flex-wrap gap-1.5 mb-4">
-        {card.tags.map((tag) => (
+        {tags.map((tag) => (
           <span
             key={tag}
             className="inline-block text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full"
@@ -281,7 +283,7 @@ function NutrientCard({
         style={{ color: card.accentColor }}
         aria-expanded={expanded}
       >
-        {expanded ? "접기" : "자세히 보기 →"}
+        {expanded ? t("expandButton.collapse") : t("expandButton.expand")}
       </button>
     </div>
   );
@@ -289,6 +291,7 @@ function NutrientCard({
 
 /* ═══════ Main Component ═══════ */
 export default function NutritionBalance() {
+  const t = useTranslations("nutrition");
   const sectionRef = useRef<HTMLElement>(null);
   const radarRef = useRef<HTMLDivElement>(null);
   const [radarInView, setRadarInView] = useState(false);
@@ -405,19 +408,19 @@ export default function NutritionBalance() {
             className="font-bold text-text-primary leading-[1.15] tracking-[-0.025em] mb-4 lg:mb-5"
             style={{ fontSize: "var(--font-size-heading-xl)" }}
           >
-            성장기에 꼭 필요한 영양
+            {t("headline.line1")}
             <br />
-            <span className="text-gradient-elderberry">균형 있게</span>{" "}
-            담았습니다
+            <span className="text-gradient-elderberry">{t("headline.highlight")}</span>{" "}
+            {t("headline.suffix")}
           </h2>
 
           <p
             ref={subRef}
             className="text-body-lg text-text-secondary max-w-[540px] mx-auto leading-relaxed"
           >
-            아미노산 7종 + 수용성 발효 칼슘 + 식물 유래 비타민B
+            {t("subtitle.line1")}
             <br className="hidden sm:block" />
-            하루 한 번으로 채우는 성장의 기초
+            {t("subtitle.line2")}
           </p>
         </div>
 
@@ -427,56 +430,24 @@ export default function NutritionBalance() {
           <div ref={radarRef} className="flex-shrink-0" data-reveal="scale">
             <RadarChart inView={radarInView} />
             <p className="text-center text-[11px] text-text-tertiary mt-3">
-              *각 성분의 영양학적 역할을 기반으로 구성한 개념도입니다
+              {t("radarChart.disclaimer")}
             </p>
           </div>
 
           {/* Quick stats */}
           <div className="flex-1 w-full">
             <div className="grid grid-cols-2 gap-3 sm:gap-5 max-w-[480px] mx-auto lg:mx-0">
-              {/* Stat: 프리미엄 원료 */}
-              <div className="card-elderberry rounded-2xl px-3 py-4 sm:p-6 text-center" data-reveal>
-                <span className="block text-2xl sm:text-3xl mb-1.5 sm:mb-2">✨</span>
-                <span className="block text-[0.9rem] sm:text-lg font-bold text-elderberry-600 mb-0.5 sm:mb-1">
-                  프리미엄 원료
-                </span>
-                <span className="text-[0.7rem] sm:text-body-sm text-text-secondary leading-snug">
-                  6가지 핵심영양소
-                </span>
-              </div>
-
-              {/* Stat: 아미노산 */}
-              <div className="card-elderberry rounded-2xl px-3 py-4 sm:p-6 text-center" data-reveal>
-                <span className="block text-2xl sm:text-3xl mb-1.5 sm:mb-2">💪</span>
-                <span className="block text-[0.9rem] sm:text-lg font-bold text-elderberry-600 mb-0.5 sm:mb-1">
-                  아미노산
-                </span>
-                <span className="text-[0.7rem] sm:text-body-sm text-text-secondary leading-snug">
-                  BCAA 포함 7종
-                </span>
-              </div>
-
-              {/* Stat: 비타민 B&C */}
-              <div className="card-elderberry rounded-2xl px-3 py-4 sm:p-6 text-center" data-reveal>
-                <span className="block text-2xl sm:text-3xl mb-1.5 sm:mb-2">🍋</span>
-                <span className="block text-[0.9rem] sm:text-lg font-bold text-elderberry-600 mb-0.5 sm:mb-1">
-                  비타민 B&amp;C
-                </span>
-                <span className="text-[0.7rem] sm:text-body-sm text-text-secondary leading-snug">
-                  레몬·홀리바질·구아바·구스베리 유래
-                </span>
-              </div>
-
-              {/* Stat: 이온화칼슘 */}
-              <div className="card-elderberry rounded-2xl px-3 py-4 sm:p-6 text-center" data-reveal>
-                <span className="block text-2xl sm:text-3xl mb-1.5 sm:mb-2">🐚</span>
-                <span className="block text-[0.9rem] sm:text-lg font-bold text-elderberry-600 mb-0.5 sm:mb-1">
-                  이온화칼슘
-                </span>
-                <span className="text-[0.7rem] sm:text-body-sm text-text-secondary leading-snug">
-                  패각 발효 수용성 이온화 미네랄
-                </span>
-              </div>
+              {QUICK_STATS.map((stat) => (
+                <div key={stat.statKey} className="card-elderberry rounded-2xl px-3 py-4 sm:p-6 text-center" data-reveal>
+                  <span className="block text-2xl sm:text-3xl mb-1.5 sm:mb-2">{stat.emoji}</span>
+                  <span className="block text-[0.9rem] sm:text-lg font-bold text-elderberry-600 mb-0.5 sm:mb-1">
+                    {t(`${stat.statKey}.title`)}
+                  </span>
+                  <span className="text-[0.7rem] sm:text-body-sm text-text-secondary leading-snug">
+                    {t(`${stat.statKey}.desc`)}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -487,7 +458,7 @@ export default function NutritionBalance() {
           className="grid md:grid-cols-3 gap-5 lg:gap-6"
         >
           {NUTRIENT_CARDS.map((card) => (
-            <NutrientCard key={card.title} card={card} />
+            <NutrientCard key={card.cardKey} card={card} />
           ))}
         </div>
 

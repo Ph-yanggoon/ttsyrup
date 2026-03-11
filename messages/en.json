@@ -1,0 +1,459 @@
+{
+  "metadata": {
+    "title": "Cellromax Children's Health Syrup | Elderberry Nutrition for Kids",
+    "description": "Children's health syrup featuring European elderberry, prebiotics, 7 amino acids, and more. Pharmacy exclusive, from age 1.",
+    "ogTitle": "Cellromax Children's Health Syrup",
+    "ogDescription": "Once a day, nourish your child's health with the power of elderberry",
+    "keywords": "children's health syrup,Cellromax,elderberry,kids health,pharmacy exclusive,prebiotics,amino acids"
+  },
+
+  "hero": {
+    "badges": {
+      "pharmacyOnly": "Pharmacy Only",
+      "fromAge1": "From Age 1+"
+    },
+    "headline": {
+      "line1": "Once a day,",
+      "line2": "with the power of elderberry,",
+      "highlight": "your child's health",
+      "suffix": "nourished"
+    },
+    "subcopy": {
+      "ingredients": "Elderberry · Prebiotics · Amino Acids · Calcium · Vitamin C · Vitamin B",
+      "description": "6 essential nutrients in one children's nutrition syrup"
+    },
+    "body": {
+      "line1": "Centered on premium Austrian elderberry,",
+      "line2": "we formulated the essential nutrients for growing children in one bottle.",
+      "line3": "Cellromax Children's Health Syrup — available only at pharmacies."
+    },
+    "cta": {
+      "viewIngredients": "View Ingredients ↓",
+      "findPharmacy": "Find a Pharmacy"
+    },
+    "scrollHint": "Scroll",
+    "products": {
+      "syrup": "Health Syrup",
+      "stick": "Health Syrup Stick",
+      "jjayo": "Health Syrup Squeeze"
+    }
+  },
+
+  "elderberry": {
+    "headline": {
+      "line1": "The purple berry Europe has cherished for centuries",
+      "highlight": "Elderberry"
+    },
+    "subtitle": "Richer in anthocyanins than blueberries",
+    "imageAlt": "Elderberry fruit",
+    "origin": {
+      "badge": "Origin Story",
+      "title": {
+        "line1": "Premium elderberry grown in",
+        "line2": "Steiermark, Austria"
+      },
+      "body1": "Cellromax Children's Health Syrup uses the Haschberg variety of elderberry cultivated in the Steiermark region of Austria.",
+      "body2": "A traditional ingredient used for centuries in Europe for seasonal health management.",
+      "imageAlt": "Austrian Steiermark elderberry"
+    },
+    "anthocyanin": {
+      "badge": "Anthocyanin Comparison",
+      "title": "Anthocyanin — The antioxidant in the purple hue",
+      "intro": "Elderberry's deep purple color is evidence of its rich anthocyanin content.",
+      "labels": {
+        "elderberry": "Elderberry",
+        "blueberry": "Blueberry"
+      },
+      "chartUnit": "mg / 100g",
+      "citation": "Source: Wu et al., J Agric Food Chem (2006)",
+      "explanation": "Anthocyanins are natural pigments found in plant flowers, fruits, and leaves, belonging to the flavonoid family that creates purple, red, and blue colors. Known as antioxidant nutrients, the deeper the color, the higher the anthocyanin content tends to be. Elderberry is one of the most prominent sources of anthocyanins, with reported levels up to approximately 4.7 times higher than blueberries.",
+      "explanationKeyword": "Anthocyanin"
+    },
+    "nutritionTable": {
+      "badge": "Elderberry Nutrients",
+      "title": "Nutrient-rich elderberry composition",
+      "centerBadge": {
+        "line1": "Nutrient-rich",
+        "line2": "Elderberry",
+        "line3": "Nutrition"
+      },
+      "perUnit": "(per 100g)",
+      "minerals": {
+        "title": "Minerals",
+        "potassium": "Potassium",
+        "phosphorus": "Phosphorus",
+        "calcium": "Calcium",
+        "sodium": "Sodium",
+        "magnesium": "Magnesium",
+        "iron": "Iron",
+        "zinc": "Zinc"
+      },
+      "vitamins": {
+        "title": "Vitamins",
+        "vitaminC": "Vitamin C",
+        "niacin": "Niacin",
+        "pyridoxine": "Pyridoxine",
+        "thiamine": "Thiamine",
+        "riboflavin": "Riboflavin",
+        "vitaminA": "Vitamin A",
+        "folate": "Folate"
+      },
+      "citation": "Source: National Standard Food Composition Table, 'Elderberry, raw'"
+    },
+    "disclaimer": "This information describes the raw ingredient, not the product itself"
+  },
+
+  "nutrition": {
+    "headline": {
+      "line1": "Essential nutrition for growing children",
+      "highlight": "balanced",
+      "suffix": "in every bottle"
+    },
+    "subtitle": {
+      "line1": "7 amino acids + water-soluble fermented calcium + plant-derived vitamin B",
+      "line2": "Build the foundation for growth with just once a day"
+    },
+    "radarChart": {
+      "ariaLabel": "Nutrition balance radar chart",
+      "centerLabel": "Nutrition Balance",
+      "axes": {
+        "elderberry": "Elderberry",
+        "aminoAcid": "Amino Acids",
+        "prebiotics": "Prebiotics",
+        "vitaminB": "Vitamin B",
+        "vitaminC": "Vitamin C",
+        "calcium": "Calcium"
+      },
+      "disclaimer": "*This is a conceptual diagram based on the nutritional roles of each ingredient"
+    },
+    "quickStats": {
+      "premium": {
+        "title": "Premium Ingredients",
+        "desc": "6 key nutrients"
+      },
+      "aminoAcid": {
+        "title": "Amino Acids",
+        "desc": "7 types including BCAAs"
+      },
+      "vitaminBC": {
+        "title": "Vitamins B & C",
+        "desc": "From lemon, holy basil, guava & gooseberry"
+      },
+      "calcium": {
+        "title": "Ionized Calcium",
+        "desc": "Shell-fermented water-soluble ionized minerals"
+      }
+    },
+    "cards": {
+      "aminoAcid": {
+        "title": "The building blocks of protein: 7 amino acids",
+        "body": "A growing child's body creates new cells every day, and amino acids are the foundation. Cellromax contains 7 amino acids including BCAAs (valine, leucine, isoleucine).",
+        "detail": "Among them, L-arginine is a semi-essential amino acid known to support healthy development in growing children, and L-glutamine is known as a primary energy source for intestinal mucosal cells.",
+        "tags": ["3 BCAAs", "L-Arginine", "L-Glutamine", "+2 more"]
+      },
+      "calcium": {
+        "title": "Water-soluble calcium — that makes the difference",
+        "body": "What matters more than how much calcium you take is how well it's absorbed. Cellromax's water-soluble fermented calcium is 100% water-soluble ionized calcium made by naturally fermenting shells from clean ocean waters.",
+        "detail": "Extracted through a fermentation process without chemical solvents, it has a form that is favorable for absorption in the body.",
+        "tags": ["Water-soluble ionized", "Naturally fermented", "Absorption-friendly"]
+      },
+      "vitaminBC": {
+        "title": "Vitamins B & C from plants",
+        "body": "Guava, holy basil, and lemon are rich in B vitamins, while Indian gooseberry is abundant in vitamin C.",
+        "detail": "Children can get 6 types of vitamin B (B1, B2, B3, B5, B6, B9) and vitamin C all at once.",
+        "tags": ["Guava", "Holy Basil", "Lemon", "Indian Gooseberry"]
+      }
+    },
+    "expandButton": {
+      "expand": "Learn more →",
+      "collapse": "Collapse"
+    }
+  },
+
+  "ingredients": {
+    "headline": {
+      "line1": "Ingredients from nature,",
+      "highlight": "formulated by science",
+      "suffix": ""
+    },
+    "subtitle": "Each ingredient selected for its unique properties, designed for children's needs.",
+    "cards": {
+      "duoligo": {
+        "tagLabel": "Gut Health",
+        "title": "DuOligo — Clinically tested prebiotics",
+        "body": "Contains galacto-oligosaccharides (GOS), known to be found in breast milk, and lactulose — prebiotic ingredients that serve as food for beneficial gut bacteria.",
+        "detail": "In a multi-center clinical trial on infants supplemented with GOS, growth of bifidobacteria and lactobacilli was promoted while harmful bacteria were suppressed.",
+        "citation": "Giovannini et al., J Am Coll Nutr (2014), Multi-center RCT",
+        "highlights": {
+          "lactulose": { "label": "Lactulose", "desc": "Nutrient for beneficial gut bacteria" },
+          "gos": { "label": "GOS", "desc": "Galacto-oligosaccharides" }
+        }
+      },
+      "amla": {
+        "tagLabel": "Vitamin C",
+        "title": "Indian Gooseberry — A vitamin C-rich fruit",
+        "body": "Amla, a superfood long used in Indian Ayurveda, is known for its exceptionally high vitamin C content.",
+        "detail": "While regular vitamin C (ascorbic acid) is easily destroyed by heat and light, amla's vitamin C remains stable thanks to its natural protective structure bound with gallic acid and tannins.",
+        "highlights": {
+          "amla": { "label": "Amla", "desc": "Indian Gooseberry" },
+          "vitaminC": { "label": "Vitamin C", "desc": "Contained in a beneficial structure" }
+        }
+      },
+      "monkfruit": {
+        "tagLabel": "Natural Sweetener",
+        "title": "Monk Fruit — Nature's sweetness",
+        "body": "Monk Fruit, from the Guilin region of southern China, has been used as a healthful fruit for centuries. It has sweetness 250 times that of sugar, yet with virtually zero calories.",
+        "detail": "Because this is a product for children, we chose a healthy ingredient even for the sweetener. Monk fruit has received GRAS (Generally Recognized As Safe) status from the U.S. FDA.",
+        "highlights": {
+          "zeroCal": { "label": "Zero Calories", "desc": "250x sweeter than sugar" },
+          "fdaGras": { "label": "FDA GRAS", "desc": "Safety recognized" }
+        }
+      }
+    },
+    "expandButton": {
+      "expand": "View ingredient details →",
+      "collapse": "Collapse ↑"
+    }
+  },
+
+  "safety": {
+    "headline": {
+      "line1": "Because it's for children,",
+      "line2prefix": "our standards are",
+      "highlight": "even stricter"
+    },
+    "subtitle": {
+      "line1": "Globally certified ingredients and pharmaceutical-grade manufacturing.",
+      "line2": "Cellromax never compromises on safety."
+    },
+    "certs": {
+      "gmp": {
+        "desc": "Pharmaceutical-grade manufacturing and quality control standards",
+        "category": "Manufacturing Quality"
+      },
+      "fssc": {
+        "desc": "International food safety management system certification",
+        "category": "Manufacturing Quality"
+      },
+      "iso": {
+        "desc": "International Organization for Standardization quality certification",
+        "category": "Manufacturing Quality"
+      },
+      "fssai": {
+        "desc": "Food Safety and Standards Authority of India certification (Indian Gooseberry)",
+        "category": "Ingredient Quality"
+      }
+    },
+    "safetyEvidence": {
+      "title": "Safety of Elderberry",
+      "body": "In a clinical trial of 312 participants (Tiralongo et al., 2016), no adverse reactions attributable to elderberry extract were identified.",
+      "citation": "— Tiralongo E, Wee SS, Lea RA. Elderberry Supplementation Reduces Cold Duration and Symptoms in Air-Travellers: A Randomized, Double-Blind Placebo-Controlled Clinical Trial. Nutrients. 2016;8(4):182."
+    },
+    "pharmacyOnly": {
+      "badge": "Pharmacy Only",
+      "title": {
+        "line1": "Available only",
+        "line2": "at pharmacies"
+      },
+      "body": "Cellromax Children's Health Syrup is a pharmacy-exclusive product. Please consult with a pharmacist to find the right product and form for your child.",
+      "cta": "Find a Pharmacy"
+    }
+  },
+
+  "formats": {
+    "headline": {
+      "line1": "The perfect fit for",
+      "highlight": "your child's lifestyle"
+    },
+    "subtitle": {
+      "line1": "At home, on the go, in your child's hands.",
+      "line2": "Choose from three formats to suit every situation."
+    },
+    "products": {
+      "syrup": {
+        "name": "Health Syrup",
+        "volume": "500ml",
+        "tagline": "The everyday essential for daily nutrition at home",
+        "desc": "An economical large-volume option for consistent nutrition management. 10ml once daily using the included measuring cup.",
+        "useCase": "Daily at home",
+        "character": "Green Dino"
+      },
+      "stick": {
+        "name": "Health Stick",
+        "volume": "10ml × 30 packets",
+        "tagline": "Portable packs for outings, travel, and daycare",
+        "desc": "Individually packaged for hygiene, no measuring needed — just give one packet as-is.",
+        "useCase": "Outings & travel",
+        "character": "Teal Dino"
+      },
+      "jjayo": {
+        "name": "Health Squeeze",
+        "volume": "20g × 40 pouches",
+        "tagline": "Fun squeeze pouches kids can enjoy on their own",
+        "desc": "The squeeze-and-eat experience fosters independence and makes nutrition time fun and resistance-free.",
+        "extra": "One Health Squeeze pouch contains the equivalent of 20ml of the syrup product in a jelly format, recommended for children aged 2 and above.",
+        "useCase": "Self-feeding",
+        "character": "Teal Dino"
+      }
+    },
+    "characterSuffix": "'s nutrition time",
+    "expandButton": {
+      "expand": "Learn more",
+      "collapse": "Collapse"
+    }
+  },
+
+  "pharmacy": {
+    "headline": {
+      "line1": "Find it at",
+      "highlight": "your nearest pharmacy"
+    },
+    "subtitle": {
+      "line1": "Cellromax Children's Health Syrup is a pharmacy-exclusive product.",
+      "line2": "Search for a nearby pharmacy that carries our products."
+    },
+    "search": {
+      "placeholder": "Enter area name or pharmacy name",
+      "button": "Search Pharmacy"
+    },
+    "map": {
+      "preparing": "Pharmacy search is coming soon",
+      "callGuide": "Please call us and we'll help you find a nearby pharmacy"
+    },
+    "notice": "Please call the pharmacy to confirm product availability before visiting",
+    "contact": {
+      "label": "Contact: Customer Center"
+    }
+  },
+
+  "faq": {
+    "headline": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "From what age can my child take this?",
+        "a": "It can be taken from age 1 and above. When starting for the first time, we recommend beginning with a small amount to observe your child's response."
+      },
+      {
+        "q": "How much should I give per day?",
+        "a": "We recommend 10ml once daily. For the syrup, use the included measuring cup. For sticks and squeeze pouches, one packet is one serving."
+      },
+      {
+        "q": "How do I choose between syrup, stick, and squeeze?",
+        "a": "All three formats contain the same key ingredients. If taking daily at home, the syrup (500ml) is most economical. For frequent outings, try the sticks (individual packets). If your child enjoys self-feeding, the squeeze pouches are recommended. Consulting with a pharmacist can help you decide."
+      },
+      {
+        "q": "Can I purchase it online?",
+        "a": "Cellromax Children's Health Syrup is a pharmacy-exclusive product and can only be purchased at your local pharmacy. Use the 'Find a Pharmacy' feature above to search for a nearby location."
+      },
+      {
+        "q": "Can it be taken with other supplements?",
+        "a": "It can be consumed with general foods. However, if taking other nutritional supplements with similar ingredients, we recommend consulting with a pharmacist."
+      },
+      {
+        "q": "Is elderberry safe for children?",
+        "a": "The elderberry extract used in Cellromax has been confirmed safe in international clinical trials (Tiralongo et al., 2016). However, if your child has a sensitive constitution or allergies, please consult with a pharmacist before consumption."
+      }
+    ],
+    "cta": {
+      "headline": {
+        "line1": "A healthier every day for your child",
+        "highlight": "starts with Cellromax"
+      },
+      "body": {
+        "line1": "Once a day, a small habit",
+        "line2": "makes a big difference in healthy growth."
+      },
+      "products": {
+        "syrup": "Health Syrup",
+        "stick": "Health Stick",
+        "jjayo": "Health Squeeze"
+      },
+      "buttons": {
+        "findPharmacy": "Find a Pharmacy",
+        "scrollToTop": "Back to top ↑"
+      },
+      "trustBadges": {
+        "pharmacyOnly": "Pharmacy Exclusive",
+        "fromAge1": "From Age 1+"
+      }
+    }
+  },
+
+  "footer": {
+    "brandTagline": "Premium health solution brand",
+    "disclaimer": {
+      "title": "Notice",
+      "items": [
+        "This product is not a medicine intended for the prevention or treatment of diseases.",
+        "Clinical trial results were observed under specific study conditions and individual results may vary.",
+        "Please consult with a pharmacist before consumption.",
+        "If you have a sensitive constitution or allergies, please check the ingredients before consumption."
+      ]
+    },
+    "company": {
+      "name": "Cellromax Science Co., Ltd. | CEO: Seo Jeong-min",
+      "bizNumber": "Business Registration No.: 125-86-27262 | Mail-order Business No.: 2018-Yongin Giheung-0828",
+      "address": "106, D-dong 1F, 357 Guseong-ro, Giheung-gu, Yongin-si, Gyeonggi-do, Korea (Yongin Technovalley, Cheongdeok-dong)",
+      "customerCenter": "Customer Center:",
+      "customerCenterHours": "(Weekdays 09:00–17:00, Lunch 12:30–13:30 / Closed on weekends & holidays)",
+      "emailLabel": "Email:",
+      "privacyOfficer": "Privacy Officer: Yang In-gyu",
+      "insurance": "Personal Information Liability Insurance (Ⅱ): Meritz Fire Insurance"
+    },
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "bizInfo": "Business Information"
+    },
+    "copyright": "© 2026 Cellromax. All rights reserved."
+  },
+
+  "productInfo": {
+    "sectionTitle": "Product Information",
+    "category": "Category",
+    "tabs": {
+      "syrup": "Syrup",
+      "stick": "Stick",
+      "jjayo": "Squeeze"
+    },
+    "rowLabels": {
+      "name": "Product Name",
+      "foodType": "Food Type",
+      "manufacturer": "Manufacturer",
+      "ingredients": "Ingredients & Content",
+      "allergen": "Allergens",
+      "intake": "Serving Size & Directions",
+      "caution": "Precautions",
+      "storage": "Storage"
+    },
+    "commonRows": {
+      "gmo": {
+        "label": "GMO",
+        "value": "Not applicable"
+      }
+    },
+    "expandButton": {
+      "expand": "Learn more",
+      "collapse": "Collapse"
+    }
+  },
+
+  "common": {
+    "brandName": "Cellromax",
+    "productLineName": "Children's Health Syrup",
+    "pharmacyOnly": "Pharmacy Only",
+    "fromAge1": "From Age 1+",
+    "findPharmacy": "Find a Pharmacy",
+    "learnMore": "Learn more",
+    "collapse": "Collapse",
+    "expand": "Learn more"
+  },
+
+  "languageSwitcher": {
+    "label": "Language",
+    "ko": "한국어",
+    "en": "English",
+    "zh": "中文",
+    "vi": "Tiếng Việt"
+  }
+}

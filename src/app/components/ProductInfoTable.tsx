@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 /* ─────────────────────────────────────────────────
    ProductInfoTable — 제품 기본 정보 테이블
@@ -10,13 +11,15 @@ import { useState } from "react";
    Mobile: 탭 전환 (시럽/스틱/짜요)
 
    Glass morphism box, dark theme 대응.
+
+   Note: 제품 고유 데이터(원재료명, 알레르기 등)는 규제 정보이므로
+   번역 대상에서 제외. UI 라벨만 i18n 적용.
    ───────────────────────────────────────────────── */
 
-/* ── 제품 데이터 ── */
+/* ── 제품 데이터 (규제 정보 — 번역 제외) ── */
 const PRODUCTS = [
   {
     id: "syrup",
-    label: "시럽",
     name: "셀로맥스 어린이튼튼시럽",
     foodType: "혼합음료",
     manufacturer: "㈜네이처텍 / 충북 진천군 초평면 용정길 29-8",
@@ -31,7 +34,6 @@ const PRODUCTS = [
   },
   {
     id: "stick",
-    label: "스틱",
     name: "셀로맥스 어린이튼튼시럽 스틱",
     foodType: "혼합음료",
     manufacturer: "㈜노바렉스 / 충북 청주시 흥덕구 오송읍 오송생명14로 80",
@@ -46,7 +48,6 @@ const PRODUCTS = [
   },
   {
     id: "jjayo",
-    label: "짜요",
     name: "셀로맥스 어린이튼튼짜요",
     foodType: "기타가공품",
     manufacturer: "㈜네이처텍 / 충북 진천군 초평면 용정길 29-8",
@@ -60,28 +61,24 @@ const PRODUCTS = [
   },
 ];
 
-/* 행 라벨 정의 */
-const ROW_LABELS = [
-  { key: "name", label: "제품명" },
-  { key: "foodType", label: "식품유형" },
-  { key: "manufacturer", label: "제조원" },
-  { key: "ingredients", label: "원재료명 및 함량" },
-  { key: "allergen", label: "알레르기" },
-  { key: "intake", label: "섭취량·섭취방법" },
-  { key: "caution", label: "섭취 시 주의사항" },
-  { key: "storage", label: "보관방법" },
+/* 행 라벨 키 정의 */
+const ROW_KEYS = [
+  "name",
+  "foodType",
+  "manufacturer",
+  "ingredients",
+  "allergen",
+  "intake",
+  "caution",
+  "storage",
 ] as const;
 
-/* 공통 행 (3제품 동일) */
-const COMMON_ROWS = [
-  { label: "유전자재조합", value: "해당없음" },
-];
-
-type RowKey = (typeof ROW_LABELS)[number]["key"];
+type RowKey = (typeof ROW_KEYS)[number];
 
 /* ── Expandable 원재료 텍스트 ── */
 function ExpandableText({ text }: { text: string }) {
   const [expanded, setExpanded] = useState(false);
+  const t = useTranslations("productInfo");
   const isLong = text.length > 60;
 
   if (!isLong) {
@@ -97,7 +94,7 @@ function ExpandableText({ text }: { text: string }) {
         onClick={() => setExpanded(!expanded)}
         className="text-elderberry-300/60 hover:text-elderberry-300 text-[10px] mt-1 transition-colors inline-block"
       >
-        {expanded ? "접기" : "더보기"}
+        {expanded ? t("expandButton.collapse") : t("expandButton.expand")}
       </button>
     </span>
   );
@@ -105,6 +102,8 @@ function ExpandableText({ text }: { text: string }) {
 
 /* ═══════ Desktop Table ═══════ */
 function DesktopTable() {
+  const t = useTranslations("productInfo");
+
   return (
     <div className="hidden md:block overflow-hidden rounded-xl border border-white/[0.06]">
       <table className="w-full text-[12px] leading-relaxed">
@@ -112,14 +111,14 @@ function DesktopTable() {
         <thead>
           <tr className="border-b border-white/[0.06]">
             <th className="text-left py-3 px-4 text-white/30 font-medium w-[130px] bg-white/[0.02]">
-              구분
+              {t("category")}
             </th>
             {PRODUCTS.map((p) => (
               <th
                 key={p.id}
                 className="text-left py-3 px-4 text-white/50 font-semibold bg-white/[0.02]"
               >
-                {p.label}
+                {t(`tabs.${p.id}`)}
               </th>
             ))}
           </tr>
@@ -127,24 +126,24 @@ function DesktopTable() {
 
         <tbody>
           {/* ── 개별 행 ── */}
-          {ROW_LABELS.map((row, ri) => (
+          {ROW_KEYS.map((key, ri) => (
             <tr
-              key={row.key}
+              key={key}
               className={`border-b border-white/[0.04] ${
                 ri % 2 === 0 ? "" : "bg-white/[0.01]"
               }`}
             >
               <td className="py-3 px-4 text-white/35 font-medium align-top whitespace-nowrap">
-                {row.label}
+                {t(`rowLabels.${key}`)}
               </td>
               {PRODUCTS.map((p) => {
-                const val = p[row.key as RowKey];
+                const val = p[key as RowKey];
                 return (
                   <td
                     key={p.id}
                     className="py-3 px-4 text-white/25 align-top"
                   >
-                    {row.key === "ingredients" ? (
+                    {key === "ingredients" ? (
                       <ExpandableText text={val} />
                     ) : (
                       val
@@ -155,38 +154,22 @@ function DesktopTable() {
             </tr>
           ))}
 
-          {/* ── 공통 행 (셀 머지) ── */}
-          {COMMON_ROWS.map((row, i) => (
-            <tr
-              key={row.label}
-              className={`${
-                i < COMMON_ROWS.length - 1
-                  ? "border-b border-white/[0.04]"
-                  : ""
-              } ${
-                (ROW_LABELS.length + i) % 2 === 0 ? "" : "bg-white/[0.01]"
-              }`}
+          {/* ── 공통 행 (유전자재조합) ── */}
+          <tr
+            className={`${
+              ROW_KEYS.length % 2 === 0 ? "" : "bg-white/[0.01]"
+            }`}
+          >
+            <td className="py-3 px-4 text-white/35 font-medium align-top whitespace-nowrap">
+              {t("commonRows.gmo.label")}
+            </td>
+            <td
+              colSpan={3}
+              className="py-3 px-4 text-white/25 align-top"
             >
-              <td className="py-3 px-4 text-white/35 font-medium align-top whitespace-nowrap">
-                {row.label}
-              </td>
-              <td
-                colSpan={3}
-                className="py-3 px-4 text-white/25 align-top"
-              >
-                {row.label === "소비자상담" ? (
-                  <a
-                    href="tel:031-662-1395"
-                    className="text-white/30 hover:text-white/50 transition-colors"
-                  >
-                    {row.value}
-                  </a>
-                ) : (
-                  row.value
-                )}
-              </td>
-            </tr>
-          ))}
+              {t("commonRows.gmo.value")}
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -196,6 +179,7 @@ function DesktopTable() {
 /* ═══════ Mobile Tabs ═══════ */
 function MobileTable() {
   const [activeTab, setActiveTab] = useState(0);
+  const t = useTranslations("productInfo");
   const product = PRODUCTS[activeTab];
 
   return (
@@ -212,7 +196,7 @@ function MobileTable() {
                 : "text-white/30 hover:text-white/50 hover:bg-white/[0.02]"
             }`}
           >
-            {p.label}
+            {t(`tabs.${p.id}`)}
           </button>
         ))}
       </div>
@@ -220,22 +204,22 @@ function MobileTable() {
       {/* ── Content ── */}
       <div className="rounded-xl border border-white/[0.06] overflow-hidden">
         <dl>
-          {ROW_LABELS.map((row, ri) => {
-            const val = product[row.key as RowKey];
+          {ROW_KEYS.map((key, ri) => {
+            const val = product[key as RowKey];
             return (
               <div
-                key={row.key}
+                key={key}
                 className={`flex flex-col gap-1 px-4 py-3 ${
-                  ri < ROW_LABELS.length - 1
+                  ri < ROW_KEYS.length - 1
                     ? "border-b border-white/[0.04]"
                     : ""
                 } ${ri % 2 === 0 ? "" : "bg-white/[0.01]"}`}
               >
                 <dt className="text-[11px] text-white/35 font-medium">
-                  {row.label}
+                  {t(`rowLabels.${key}`)}
                 </dt>
                 <dd className="text-[12px] text-white/25 leading-relaxed">
-                  {row.key === "ingredients" ? (
+                  {key === "ingredients" ? (
                     <ExpandableText text={val} />
                   ) : (
                     val
@@ -245,35 +229,19 @@ function MobileTable() {
             );
           })}
 
-          {/* ── 공통 행 ── */}
-          {COMMON_ROWS.map((row, i) => (
-            <div
-              key={row.label}
-              className={`flex flex-col gap-1 px-4 py-3 ${
-                i < COMMON_ROWS.length - 1
-                  ? "border-b border-white/[0.04]"
-                  : ""
-              } ${
-                (ROW_LABELS.length + i) % 2 === 0 ? "" : "bg-white/[0.01]"
-              }`}
-            >
-              <dt className="text-[11px] text-white/35 font-medium">
-                {row.label}
-              </dt>
-              <dd className="text-[12px] text-white/25 leading-relaxed">
-                {row.label === "소비자상담" ? (
-                  <a
-                    href="tel:031-662-1395"
-                    className="text-white/30 hover:text-white/50 transition-colors"
-                  >
-                    {row.value}
-                  </a>
-                ) : (
-                  row.value
-                )}
-              </dd>
-            </div>
-          ))}
+          {/* ── 공통 행 (유전자재조합) ── */}
+          <div
+            className={`flex flex-col gap-1 px-4 py-3 ${
+              ROW_KEYS.length % 2 === 0 ? "" : "bg-white/[0.01]"
+            }`}
+          >
+            <dt className="text-[11px] text-white/35 font-medium">
+              {t("commonRows.gmo.label")}
+            </dt>
+            <dd className="text-[12px] text-white/25 leading-relaxed">
+              {t("commonRows.gmo.value")}
+            </dd>
+          </div>
         </dl>
       </div>
     </div>
@@ -282,12 +250,14 @@ function MobileTable() {
 
 /* ═══════ Main Component ═══════ */
 export default function ProductInfoTable() {
+  const t = useTranslations("productInfo");
+
   return (
     <div className="max-w-[900px] mx-auto">
       {/* Section title */}
       <div className="text-center mb-5">
         <span className="text-[13px] font-semibold text-white/40 tracking-wider">
-          제품 기본정보
+          {t("sectionTitle")}
         </span>
       </div>
 

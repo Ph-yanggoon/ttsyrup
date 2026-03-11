@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import {
   useScrollAnimation,
   useProgressiveReveal,
@@ -16,38 +17,30 @@ import {
    - Pharmacy-only badge emphasis
    ───────────────────────────────────────────────── */
 
-/* ── Certification data ── */
+/* ── Certification data (visual config only, text via i18n) ── */
 const CERTS = [
   {
     id: "gmp",
     abbr: "GMP",
     label: "Good Manufacturing Practice",
-    desc: "의약품 수준의 제조·품질 관리 기준",
-    category: "제조 품질",
     color: "var(--color-elderberry)",
   },
   {
     id: "fssc",
     abbr: "FSSC 22000",
     label: "Food Safety System Certification",
-    desc: "국제 식품안전경영시스템 인증",
-    category: "제조 품질",
     color: "var(--color-elderberry)",
   },
   {
     id: "iso",
     abbr: "ISO",
     label: "International Organization for Standardization",
-    desc: "국제표준화기구 품질인증",
-    category: "제조 품질",
     color: "var(--color-elderberry)",
   },
   {
     id: "fssai",
     abbr: "FSSAI",
     label: "Food Safety and Standards Authority of India",
-    desc: "인도 식품안전표준국 인증 (인디언구스베리)",
-    category: "원료 품질",
     color: "var(--color-coral)",
   },
 ];
@@ -80,6 +73,8 @@ function ShieldIcon({ color }: { color: string }) {
 }
 
 export default function SafetyCerts() {
+  const t = useTranslations("safety");
+
   /* ── Scroll hooks ── */
   const headlineRef = useScrollAnimation<HTMLHeadingElement>({
     from: { opacity: 0, y: 40 },
@@ -135,18 +130,18 @@ export default function SafetyCerts() {
             className="font-bold text-text-primary leading-[1.15] tracking-[-0.025em] mb-4"
             style={{ fontSize: "var(--font-size-heading-xl)" }}
           >
-            아이가 먹는 것이니까
+            {t("headline.line1")}
             <br />
-            기준은 <span className="text-gradient-elderberry">더 엄격하게</span>
+            {t("headline.line2prefix")} <span className="text-gradient-elderberry">{t("headline.highlight")}</span>
           </h2>
 
           <p
             ref={subRef}
             className="text-body-lg text-text-secondary max-w-[520px] mx-auto leading-relaxed"
           >
-            글로벌 인증 원료와 의약품 수준의 제조 관리.
+            {t("subtitle.line1")}
             <br className="hidden sm:block" />
-            셀로맥스는 안전을 타협하지 않습니다.
+            {t("subtitle.line2")}
           </p>
         </div>
 
@@ -162,7 +157,7 @@ export default function SafetyCerts() {
             >
               {/* Category */}
               <span className="text-[10px] uppercase tracking-widest font-semibold text-text-tertiary mb-3 block">
-                {cert.category}
+                {t(`certs.${cert.id}.category`)}
               </span>
 
               {/* Icon + Abbr */}
@@ -183,7 +178,7 @@ export default function SafetyCerts() {
 
               {/* Description */}
               <p className="text-body-sm text-text-secondary leading-relaxed">
-                {cert.desc}
+                {t(`certs.${cert.id}.desc`)}
               </p>
             </div>
           ))}
@@ -224,17 +219,16 @@ export default function SafetyCerts() {
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-text-primary leading-snug">
-                엘더베리의 안전성
+                {t("safetyEvidence.title")}
               </h3>
             </div>
 
             <p className="text-body text-text-secondary leading-relaxed mb-3">
-              312명 대상 임상시험(Tiralongo et al., 2016)에서
-              엘더베리 추출물에 기인한 이상반응은 확인되지 않았습니다.
+              {t("safetyEvidence.body")}
             </p>
 
             <p className="text-[11px] text-text-tertiary/60 italic leading-relaxed">
-              — Tiralongo E, Wee SS, Lea RA. Elderberry Supplementation Reduces Cold Duration and Symptoms in Air-Travellers: A Randomized, Double-Blind Placebo-Controlled Clinical Trial. <em>Nutrients.</em> 2016;8(4):182.
+              {t("safetyEvidence.citation")}
             </p>
           </div>
 
@@ -260,25 +254,24 @@ export default function SafetyCerts() {
             <div className="relative z-10">
               {/* Badge */}
               <span className="inline-block text-xs font-bold tracking-wider uppercase px-3 py-1.5 rounded-full bg-white/15 text-white/90 mb-5">
-                Pharmacy Only
+                {t("pharmacyOnly.badge")}
               </span>
 
               <h3 className="text-xl sm:text-2xl font-bold text-white leading-snug mb-3">
-                약국에서만
+                {t("pharmacyOnly.title.line1")}
                 <br />
-                만날 수 있습니다
+                {t("pharmacyOnly.title.line2")}
               </h3>
 
               <p className="text-body text-white/70 leading-relaxed mb-5">
-                셀로맥스 어린이튼튼시럽은 약국 전용 제품입니다.
-                우리 아이에게 꼭 맞는 제품과 제형을 약사님과 상담 후에 섭취하세요.
+                {t("pharmacyOnly.body")}
               </p>
 
               <a
                 href="#pharmacy-finder"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-white bg-white/15 hover:bg-white/25 rounded-full px-5 py-2.5 transition-colors duration-200"
               >
-                가까운 약국 찾기
+                {t("pharmacyOnly.cta")}
                 <svg
                   width="14"
                   height="14"

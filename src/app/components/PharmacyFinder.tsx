@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { useScrollAnimation } from "./scroll-hooks";
 
 /* ─────────────────────────────────────────────────
@@ -16,6 +17,7 @@ import { useScrollAnimation } from "./scroll-hooks";
 
 export default function PharmacyFinder() {
   const [query, setQuery] = useState("");
+  const t = useTranslations("pharmacy");
 
   /* ── Scroll hooks ── */
   const headlineRef = useScrollAnimation<HTMLHeadingElement>({
@@ -66,18 +68,18 @@ export default function PharmacyFinder() {
             className="font-bold text-text-primary leading-[1.15] tracking-[-0.025em] mb-4"
             style={{ fontSize: "var(--font-size-heading-xl)" }}
           >
-            가까운 약국에서
+            {t("headline.line1")}
             <br />
-            <span className="text-gradient-warm">만나보세요</span>
+            <span className="text-gradient-warm">{t("headline.highlight")}</span>
           </h2>
 
           <p
             ref={subRef}
             className="text-body-lg text-text-secondary max-w-[480px] mx-auto leading-relaxed"
           >
-            셀로맥스 어린이튼튼시럽은 약국 전용 제품입니다.
+            {t("subtitle.line1")}
             <br className="hidden sm:block" />
-            현재 위치 기반으로 가까운 취급 약국을 찾아보세요.
+            {t("subtitle.line2")}
           </p>
         </div>
 
@@ -109,12 +111,12 @@ export default function PharmacyFinder() {
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="지역명 또는 약국명을 입력하세요"
+                placeholder={t("search.placeholder")}
                 className="w-full pl-12 pr-4 py-3.5 bg-white rounded-xl border border-black/[0.06] text-body text-text-primary placeholder:text-text-tertiary focus:outline-none focus:ring-2 focus:ring-elderberry-300 transition-shadow"
               />
             </div>
             <button className="btn-primary flex-shrink-0 px-6 !py-3.5 !rounded-xl">
-              약국 검색
+              {t("search.button")}
             </button>
           </div>
 
@@ -146,10 +148,10 @@ export default function PharmacyFinder() {
                 />
               </svg>
               <p className="text-body text-text-secondary mb-1">
-                약국 검색 기능은 준비 중입니다
+                {t("map.preparing")}
               </p>
               <p className="text-body-sm text-text-tertiary">
-                전화로 문의해 주시면 가까운 약국을 안내해 드립니다
+                {t("map.callGuide")}
               </p>
             </div>
 
@@ -166,7 +168,7 @@ export default function PharmacyFinder() {
           </div>
 
           <p className="text-body-sm text-text-primary font-medium mt-4 text-center">
-            해당 약국의 제품 종류와 재고 여부를 전화로 문의 후 방문하시기 바랍니다
+            {t("notice")}
           </p>
         </div>
 
@@ -191,7 +193,7 @@ export default function PharmacyFinder() {
               />
             </svg>
             <span className="text-body-sm font-medium text-text-primary">
-              문의: 고객센터{" "}
+              {t("contact.label")}{" "}
               <a
                 href="tel:031-662-1395"
                 className="text-elderberry-500 hover:underline"

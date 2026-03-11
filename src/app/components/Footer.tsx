@@ -1,12 +1,18 @@
+"use client";
+
 /* ─────────────────────────────────────────────────
    Footer
    Dark elderberry gradient background.
    Company info, disclaimer, links, copyright.
    ───────────────────────────────────────────────── */
 
+import { useTranslations } from "next-intl";
 import ProductInfoTable from "./ProductInfoTable";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+  const disclaimerItems = t.raw("disclaimer.items") as string[];
+
   return (
     <footer className="section-dark relative overflow-hidden">
       {/* Background subtle texture */}
@@ -59,7 +65,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-body-sm text-white/30">
-            프리미엄 건강 솔루션 전문 브랜드
+            {t("brandTagline")}
           </p>
         </div>
 
@@ -87,22 +93,13 @@ export default function Footer() {
                 />
               </svg>
               <span className="text-[11px] font-semibold text-white/40 uppercase tracking-wider">
-                안내사항
+                {t("disclaimer.title")}
               </span>
             </div>
             <div className="space-y-1.5 text-[12px] text-white/30 leading-relaxed">
-              <p>
-                본 제품은 질병의 예방 및 치료를 위한 의약품이 아닙니다.
-              </p>
-              <p>
-                임상시험 결과는 해당 연구의 특정 조건에서 확인된 것으로, 개인에
-                따라 결과가 다를 수 있습니다.
-              </p>
-              <p>섭취 전 약사와 상담하시기 바랍니다.</p>
-              <p>
-                특이 체질이거나 알레르기 체질인 경우, 성분을 확인하신 후
-                섭취하십시오.
-              </p>
+              {disclaimerItems.map((item, i) => (
+                <p key={i}>{item}</p>
+              ))}
             </div>
           </div>
         </div>
@@ -115,29 +112,21 @@ export default function Footer() {
         {/* ── Company Info ── */}
         <div className="max-w-[640px] mx-auto text-center mb-8 lg:mb-10">
           <div className="space-y-2 text-[12px] text-white/25 leading-relaxed">
+            <p>{t("company.name")}</p>
+            <p>{t("company.bizNumber")}</p>
+            <p>{t("company.address")}</p>
             <p>
-              (주)셀로맥스사이언스 | 대표: 서정민
-            </p>
-            <p>
-              사업자등록번호: 125-86-27262 | 통신판매업신고:
-              2018-용인기흥-0828
-            </p>
-            <p>
-              경기도 용인시 기흥구 구성로 357 디동 1층 106호
-              용인테크노밸리(청덕동)
-            </p>
-            <p>
-              고객센터:{" "}
+              {t("company.customerCenter")}{" "}
               <a
                 href="tel:031-662-1395"
                 className="text-white/35 hover:text-white/50 transition-colors"
               >
                 031-662-1395
               </a>{" "}
-              (평일 09:00~17:00, 점심 12:30~13:30 / 토·일·공휴일 휴무)
+              {t("company.customerCenterHours")}
             </p>
             <p>
-              이메일:{" "}
+              {t("company.emailLabel")}{" "}
               <a
                 href="mailto:health1395@kshp.co.kr"
                 className="text-white/35 hover:text-white/50 transition-colors"
@@ -145,8 +134,8 @@ export default function Footer() {
                 health1395@kshp.co.kr
               </a>
             </p>
-            <p>개인정보관리책임자: 양인규</p>
-            <p>개인정보보호배상책임보험(Ⅱ) 가입: 메리츠화재</p>
+            <p>{t("company.privacyOfficer")}</p>
+            <p>{t("company.insurance")}</p>
           </div>
         </div>
 
@@ -159,27 +148,27 @@ export default function Footer() {
                 href="#"
                 className="text-white/25 hover:text-white/50 transition-colors"
               >
-                개인정보처리방침
+                {t("links.privacy")}
               </a>
               <span className="w-px h-3 bg-white/10" />
               <a
                 href="#"
                 className="text-white/25 hover:text-white/50 transition-colors"
               >
-                이용약관
+                {t("links.terms")}
               </a>
               <span className="w-px h-3 bg-white/10" />
               <a
                 href="#"
                 className="text-white/25 hover:text-white/50 transition-colors"
               >
-                사업자정보확인
+                {t("links.bizInfo")}
               </a>
             </div>
 
             {/* Copyright */}
             <p className="text-[11px] text-white/20">
-              &copy; 2026 Cellromax. All rights reserved.
+              {t("copyright")}
             </p>
           </div>
         </div>

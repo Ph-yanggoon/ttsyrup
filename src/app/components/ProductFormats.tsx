@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import {
   useScrollAnimation,
   useProgressiveReveal,
@@ -18,63 +19,40 @@ import {
    - Character mention at bottom
    ───────────────────────────────────────────────── */
 
-/* ── Product format data ── */
+/* ── Product format data (visual config only, text via i18n) ── */
 interface FormatData {
   id: string;
-  name: string;
-  volume: string;
   image: string;
-  tagline: string;
-  desc: string;
-  extra?: string;
-  useCase: string;
   icon: string;
   color: string;
   characterColor: string;
-  character: string;
+  hasExtra: boolean;
 }
 
 const FORMATS: FormatData[] = [
   {
     id: "syrup",
-    name: "어린이튼튼시럽",
-    volume: "500ml",
     image: "/products/syrup-box-transparent.png",
-    tagline: "가정에서 매일 먹이기 좋은 기본형",
-    desc: "경제적인 대용량으로 꾸준한 영양 관리에 적합합니다. 계량컵으로 1회 10ml, 하루 한 번.",
-    useCase: "집에서 매일",
     icon: "🏠",
     color: "var(--color-elderberry)",
     characterColor: "#7CB342",
-    character: "초록 공룡",
+    hasExtra: false,
   },
   {
     id: "stick",
-    name: "어린이튼튼스틱",
-    volume: "10ml × 30포",
     image: "/products/stick-transparent.png",
-    tagline: "외출, 여행, 어린이집에 가져가기 좋은 휴대형",
-    desc: "개별 포장이라 위생적이고, 따로 계량할 필요 없이 한 포를 그대로 먹이면 됩니다.",
-    useCase: "외출·여행",
     icon: "✈️",
     color: "var(--color-elderberry-400)",
     characterColor: "#4DB6AC",
-    character: "청록 공룡",
+    hasExtra: false,
   },
   {
     id: "jjayo",
-    name: "어린이튼튼짜요",
-    volume: "20g × 40포",
     image: "/products/jjayo-40pack-transparent.png",
-    tagline: "아이가 직접 짜서 먹는 재미있는 파우치형",
-    desc: "스스로 짜먹는 경험이 아이의 자율성을 길러주고, 거부감 없이 즐겁게 영양을 섭취할 수 있습니다.",
-    extra:
-      "어린이 튼튼짜요 1포는 시럽제품의 20ml에 해당하는 용량이 젤리 제형에 담겨 있어 만 2세 이상부터 섭취를 권장합니다.",
-    useCase: "아이 스스로",
     icon: "🧒",
     color: "var(--color-coral)",
     characterColor: "#4DB6AC",
-    character: "청록 공룡",
+    hasExtra: true,
   },
 ];
 
@@ -88,6 +66,8 @@ function FormatCard({
   isExpanded: boolean;
   onToggle: () => void;
 }) {
+  const t = useTranslations("formats");
+
   return (
     <button
       onClick={onToggle}
@@ -118,10 +98,10 @@ function FormatCard({
           }}
         >
           <span>{format.icon}</span>
-          {format.useCase}
+          {t(`products.${format.id}.useCase`)}
         </span>
         <span className="text-[11px] text-text-tertiary font-medium">
-          {format.volume}
+          {t(`products.${format.id}.volume`)}
         </span>
       </div>
 
@@ -130,7 +110,7 @@ function FormatCard({
         <div className="relative w-[75%] h-[75%]">
           <Image
             src={format.image}
-            alt={format.name}
+            alt={t(`products.${format.id}.name`)}
             fill
             sizes="(max-width: 640px) 60vw, (max-width: 1024px) 30vw, 20vw"
             className={`object-contain transition-transform duration-500 ${
@@ -147,27 +127,31 @@ function FormatCard({
         className="text-lg font-bold mb-1.5 transition-colors duration-300"
         style={{ color: isExpanded ? format.color : "var(--color-text-primary)" }}
       >
-        {format.name}
+        {t(`products.${format.id}.name`)}
       </h3>
 
       {/* Tagline */}
       <p className="text-body-sm text-text-secondary leading-relaxed">
-        {format.tagline}
+        {t(`products.${format.id}.tagline`)}
       </p>
 
       {/* ── Expandable Detail ── */}
       <div
-        className={`overflow-hidden transition-all duration-500 ease-out ${
-          isExpanded ? "max-h-[400px] opacity-100 mt-4" : "max-h-0 opacity-0"
-        }`}
+        className="grid transition-[grid-template-rows,opacity] duration-500 ease-out"
+        style={{
+          gridTemplateRows: isExpanded ? "1fr" : "0fr",
+          opacity: isExpanded ? 1 : 0,
+          marginTop: isExpanded ? "1rem" : 0,
+        }}
       >
+        <div className="overflow-hidden">
         <div className="pt-3 border-t border-black/[0.06]">
           <p className="text-body-sm text-text-secondary leading-relaxed">
-            {format.desc}
+            {t(`products.${format.id}.desc`)}
           </p>
-          {format.extra && (
+          {format.hasExtra && (
             <p className="text-body-sm text-text-secondary leading-relaxed mt-2">
-              {format.extra}
+              {t(`products.${format.id}.extra`)}
             </p>
           )}
           <div className="flex items-center gap-2 mt-3">
@@ -176,9 +160,10 @@ function FormatCard({
               style={{ backgroundColor: format.characterColor }}
             />
             <span className="text-[11px] text-text-tertiary">
-              {format.character}와 함께하는 영양 시간
+              {t(`products.${format.id}.character`)}{t("characterSuffix")}
             </span>
           </div>
+        </div>
         </div>
       </div>
 
@@ -189,7 +174,7 @@ function FormatCard({
           color: isExpanded ? format.color : "var(--color-text-tertiary)",
         }}
       >
-        <span>{isExpanded ? "접기" : "더보기"}</span>
+        <span>{isExpanded ? t("expandButton.collapse") : t("expandButton.expand")}</span>
         <svg
           width="12"
           height="12"
@@ -215,6 +200,7 @@ function FormatCard({
 /* ═══════ Main Component ═══════ */
 export default function ProductFormats() {
   const [expandedIdx, setExpandedIdx] = useState<number | null>(null);
+  const t = useTranslations("formats");
 
   /* ── Scroll hooks ── */
   const headlineRef = useScrollAnimation<HTMLHeadingElement>({
@@ -249,18 +235,18 @@ export default function ProductFormats() {
             className="font-bold text-text-primary leading-[1.15] tracking-[-0.025em] mb-4"
             style={{ fontSize: "var(--font-size-heading-xl)" }}
           >
-            우리 아이 생활에 맞는
+            {t("headline.line1")}
             <br />
-            <span className="text-gradient-warm">딱 맞는 한 가지</span>
+            <span className="text-gradient-warm">{t("headline.highlight")}</span>
           </h2>
 
           <p
             ref={subRef}
             className="text-body-lg text-text-secondary max-w-[480px] mx-auto"
           >
-            집에서, 밖에서, 아이 손에서.
+            {t("subtitle.line1")}
             <br className="hidden sm:block" />
-            세 가지 제형으로 상황에 맞게 선택하세요.
+            {t("subtitle.line2")}
           </p>
         </div>
 

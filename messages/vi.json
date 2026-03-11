@@ -1,0 +1,459 @@
+{
+  "metadata": {
+    "title": "Cellromax Siro Sức Khỏe Trẻ Em | Dinh dưỡng Elderberry cho bé",
+    "description": "Siro sức khỏe trẻ em với elderberry châu Âu, prebiotic, 7 loại axit amin và nhiều hơn nữa. Chỉ bán tại nhà thuốc, từ 1 tuổi trở lên.",
+    "ogTitle": "Cellromax Siro Sức Khỏe Trẻ Em",
+    "ogDescription": "Mỗi ngày một lần, chăm sóc sức khỏe con bạn với sức mạnh của elderberry",
+    "keywords": "siro sức khỏe trẻ em,Cellromax,elderberry,sức khỏe trẻ em,nhà thuốc,prebiotic,axit amin"
+  },
+
+  "hero": {
+    "badges": {
+      "pharmacyOnly": "Chỉ bán tại nhà thuốc",
+      "fromAge1": "Từ 1 tuổi trở lên"
+    },
+    "headline": {
+      "line1": "Mỗi ngày một lần,",
+      "line2": "với sức mạnh của elderberry,",
+      "highlight": "chăm sóc sức khỏe bé yêu",
+      "suffix": ""
+    },
+    "subcopy": {
+      "ingredients": "Elderberry · Prebiotic · Axit amin · Canxi · Vitamin C · Vitamin B",
+      "description": "6 dưỡng chất thiết yếu trong một siro dinh dưỡng cho trẻ"
+    },
+    "body": {
+      "line1": "Lấy elderberry cao cấp từ Áo làm cốt lõi,",
+      "line2": "chúng tôi đã phối hợp các dưỡng chất cần thiết cho trẻ đang lớn trong một chai.",
+      "line3": "Cellromax Siro Sức Khỏe Trẻ Em — chỉ có tại nhà thuốc."
+    },
+    "cta": {
+      "viewIngredients": "Xem chi tiết thành phần ↓",
+      "findPharmacy": "Tìm nhà thuốc gần nhất"
+    },
+    "scrollHint": "Scroll",
+    "products": {
+      "syrup": "Siro Sức Khỏe",
+      "stick": "Siro Sức Khỏe dạng gói",
+      "jjayo": "Siro Sức Khỏe dạng bóp"
+    }
+  },
+
+  "elderberry": {
+    "headline": {
+      "line1": "Quả mọng tím được châu Âu gìn giữ hàng trăm năm",
+      "highlight": "Elderberry"
+    },
+    "subtitle": "Hàm lượng anthocyanin phong phú hơn việt quất",
+    "imageAlt": "Quả elderberry",
+    "origin": {
+      "badge": "Câu chuyện nguồn gốc",
+      "title": {
+        "line1": "Elderberry cao cấp được trồng tại",
+        "line2": "Steiermark, Áo"
+      },
+      "body1": "Cellromax Siro Sức Khỏe Trẻ Em sử dụng giống Haschberg được trồng tại vùng Steiermark, Áo.",
+      "body2": "Đây là nguyên liệu truyền thống được sử dụng hàng trăm năm ở châu Âu để chăm sóc sức khỏe theo mùa.",
+      "imageAlt": "Elderberry vùng Steiermark, Áo"
+    },
+    "anthocyanin": {
+      "badge": "So sánh hàm lượng Anthocyanin",
+      "title": "Anthocyanin — Chất chống oxy hóa trong sắc tím",
+      "intro": "Màu tím đậm của elderberry chính là bằng chứng về hàm lượng anthocyanin phong phú.",
+      "labels": {
+        "elderberry": "Elderberry",
+        "blueberry": "Việt quất"
+      },
+      "chartUnit": "mg / 100g",
+      "citation": "Nguồn: Wu et al., J Agric Food Chem (2006)",
+      "explanation": "Anthocyanin là sắc tố tự nhiên có trong hoa, quả và lá của thực vật, thuộc họ flavonoid tạo ra màu tím, đỏ và xanh. Được biết đến là chất dinh dưỡng chống oxy hóa, màu sắc càng đậm thì hàm lượng anthocyanin càng cao. Elderberry là một trong những nguồn anthocyanin tiêu biểu, với hàm lượng được báo cáo cao hơn việt quất khoảng 4,7 lần.",
+      "explanationKeyword": "Anthocyanin"
+    },
+    "nutritionTable": {
+      "badge": "Thành phần dinh dưỡng Elderberry",
+      "title": "Thành phần dinh dưỡng phong phú của elderberry",
+      "centerBadge": {
+        "line1": "Giàu dinh dưỡng",
+        "line2": "Elderberry",
+        "line3": "Thành phần"
+      },
+      "perUnit": "(per 100g)",
+      "minerals": {
+        "title": "Minerals",
+        "potassium": "Kali",
+        "phosphorus": "Phốt pho",
+        "calcium": "Canxi",
+        "sodium": "Natri",
+        "magnesium": "Magiê",
+        "iron": "Sắt",
+        "zinc": "Kẽm"
+      },
+      "vitamins": {
+        "title": "Vitamins",
+        "vitaminC": "Vitamin C",
+        "niacin": "Niacin",
+        "pyridoxine": "Pyridoxine",
+        "thiamine": "Thiamine",
+        "riboflavin": "Riboflavin",
+        "vitaminA": "Vitamin A",
+        "folate": "Folate"
+      },
+      "citation": "Nguồn: Bảng thành phần thực phẩm tiêu chuẩn quốc gia 'Elderberry, tươi'"
+    },
+    "disclaimer": "Thông tin này mô tả nguyên liệu thô, không liên quan trực tiếp đến sản phẩm"
+  },
+
+  "nutrition": {
+    "headline": {
+      "line1": "Dinh dưỡng thiết yếu cho giai đoạn tăng trưởng",
+      "highlight": "cân đối",
+      "suffix": "trong từng chai"
+    },
+    "subtitle": {
+      "line1": "7 loại axit amin + canxi lên men hòa tan + vitamin B từ thực vật",
+      "line2": "Xây dựng nền tảng tăng trưởng chỉ với một lần mỗi ngày"
+    },
+    "radarChart": {
+      "ariaLabel": "Biểu đồ radar cân bằng dinh dưỡng",
+      "centerLabel": "Cân bằng dinh dưỡng",
+      "axes": {
+        "elderberry": "Elderberry",
+        "aminoAcid": "Axit amin",
+        "prebiotics": "Prebiotic",
+        "vitaminB": "Vitamin B",
+        "vitaminC": "Vitamin C",
+        "calcium": "Canxi"
+      },
+      "disclaimer": "*Đây là sơ đồ khái niệm dựa trên vai trò dinh dưỡng của từng thành phần"
+    },
+    "quickStats": {
+      "premium": {
+        "title": "Nguyên liệu cao cấp",
+        "desc": "6 dưỡng chất thiết yếu"
+      },
+      "aminoAcid": {
+        "title": "Axit amin",
+        "desc": "7 loại bao gồm BCAA"
+      },
+      "vitaminBC": {
+        "title": "Vitamin B & C",
+        "desc": "Từ chanh, húng quế, ổi & lý gai"
+      },
+      "calcium": {
+        "title": "Canxi ion hóa",
+        "desc": "Khoáng chất ion hóa hòa tan từ vỏ sò lên men"
+      }
+    },
+    "cards": {
+      "aminoAcid": {
+        "title": "Nền tảng của protein: 7 loại axit amin",
+        "body": "Cơ thể trẻ đang lớn tạo ra tế bào mới mỗi ngày, và axit amin chính là nền tảng. Cellromax chứa 7 loại axit amin bao gồm BCAA (valine, leucine, isoleucine).",
+        "detail": "Trong đó, L-arginine là axit amin bán thiết yếu được biết là hỗ trợ sự phát triển khỏe mạnh ở trẻ đang lớn, và L-glutamine được biết là nguồn năng lượng chính cho tế bào niêm mạc ruột.",
+        "tags": ["BCAA 3 loại", "L-Arginine", "L-Glutamine", "+2 loại"]
+      },
+      "calcium": {
+        "title": "Canxi hòa tan trong nước — sự khác biệt",
+        "body": "Điều quan trọng hơn việc uống nhiều canxi là khả năng hấp thụ tốt. Canxi lên men hòa tan của Cellromax là canxi ion hóa 100% hòa tan trong nước, được tạo ra bằng cách lên men tự nhiên vỏ sò từ vùng biển sạch.",
+        "detail": "Được chiết xuất chỉ qua quy trình lên men không sử dụng dung môi hóa học, có dạng thuận lợi cho việc hấp thụ trong cơ thể.",
+        "tags": ["Ion hóa hòa tan", "Lên men tự nhiên", "Dễ hấp thụ"]
+      },
+      "vitaminBC": {
+        "title": "Vitamin B & C từ thực vật",
+        "body": "Ổi, húng quế thánh và chanh giàu vitamin nhóm B, trong khi lý gai Ấn Độ chứa nhiều vitamin C.",
+        "detail": "Trẻ em có thể bổ sung cùng lúc 6 loại vitamin B (B1, B2, B3, B5, B6, B9) và vitamin C.",
+        "tags": ["Ổi", "Húng quế thánh", "Chanh", "Lý gai Ấn Độ"]
+      }
+    },
+    "expandButton": {
+      "expand": "Xem chi tiết →",
+      "collapse": "Thu gọn"
+    }
+  },
+
+  "ingredients": {
+    "headline": {
+      "line1": "Nguyên liệu từ thiên nhiên,",
+      "highlight": "phối hợp bởi khoa học",
+      "suffix": ""
+    },
+    "subtitle": "Mỗi thành phần được chọn lọc theo đặc tính riêng, thiết kế cho nhu cầu của trẻ.",
+    "cards": {
+      "duoligo": {
+        "tagLabel": "Sức khỏe đường ruột",
+        "title": "DuOligo — Prebiotic đã được kiểm chứng lâm sàng",
+        "body": "Chứa galacto-oligosaccharide (GOS) được biết có trong sữa mẹ và lactulose — thành phần prebiotic làm thức ăn cho vi khuẩn có lợi trong đường ruột.",
+        "detail": "Trong thử nghiệm lâm sàng đa trung tâm trên trẻ sơ sinh được bổ sung GOS, sự phát triển của bifidobacteria và lactobacilli được thúc đẩy trong khi vi khuẩn có hại bị ức chế.",
+        "citation": "Giovannini et al., J Am Coll Nutr (2014), RCT đa trung tâm",
+        "highlights": {
+          "lactulose": { "label": "Lactulose", "desc": "Dinh dưỡng cho vi khuẩn có lợi" },
+          "gos": { "label": "GOS", "desc": "Galacto-oligosaccharide" }
+        }
+      },
+      "amla": {
+        "tagLabel": "Vitamin C",
+        "title": "Lý gai Ấn Độ — Quả giàu vitamin C",
+        "body": "Amla, siêu thực phẩm được sử dụng từ lâu trong y học Ayurveda Ấn Độ, nổi tiếng với hàm lượng vitamin C cực kỳ cao.",
+        "detail": "Trong khi vitamin C thông thường (axit ascorbic) dễ bị phá hủy bởi nhiệt và ánh sáng, vitamin C trong amla giữ ổn định nhờ cấu trúc bảo vệ tự nhiên liên kết với axit gallic và tannin.",
+        "highlights": {
+          "amla": { "label": "Amla", "desc": "Lý gai Ấn Độ" },
+          "vitaminC": { "label": "Vitamin C", "desc": "Chứa trong cấu trúc có lợi" }
+        }
+      },
+      "monkfruit": {
+        "tagLabel": "Chất tạo ngọt tự nhiên",
+        "title": "La hán quả — Vị ngọt từ thiên nhiên",
+        "body": "La hán quả, đến từ vùng Quế Lâm miền nam Trung Quốc, đã được sử dụng như một loại quả có lợi cho sức khỏe từ hàng thế kỷ. Có độ ngọt gấp 250 lần đường nhưng gần như không có calo.",
+        "detail": "Vì đây là sản phẩm cho trẻ em, chúng tôi chọn nguyên liệu lành mạnh ngay cả cho chất tạo ngọt. La hán quả đã được FDA Hoa Kỳ cấp chứng nhận GRAS (Được công nhận là an toàn).",
+        "highlights": {
+          "zeroCal": { "label": "Không calo", "desc": "Ngọt gấp 250 lần đường" },
+          "fdaGras": { "label": "FDA GRAS", "desc": "An toàn được công nhận" }
+        }
+      }
+    },
+    "expandButton": {
+      "expand": "Xem chi tiết thành phần →",
+      "collapse": "Thu gọn ↑"
+    }
+  },
+
+  "safety": {
+    "headline": {
+      "line1": "Vì đây là cho trẻ em,",
+      "line2prefix": "tiêu chuẩn phải",
+      "highlight": "nghiêm ngặt hơn"
+    },
+    "subtitle": {
+      "line1": "Nguyên liệu được chứng nhận toàn cầu và sản xuất theo tiêu chuẩn dược phẩm.",
+      "line2": "Cellromax không bao giờ thỏa hiệp về an toàn."
+    },
+    "certs": {
+      "gmp": {
+        "desc": "Tiêu chuẩn sản xuất và kiểm soát chất lượng cấp dược phẩm",
+        "category": "Chất lượng sản xuất"
+      },
+      "fssc": {
+        "desc": "Chứng nhận hệ thống quản lý an toàn thực phẩm quốc tế",
+        "category": "Chất lượng sản xuất"
+      },
+      "iso": {
+        "desc": "Chứng nhận chất lượng của Tổ chức Tiêu chuẩn hóa Quốc tế",
+        "category": "Chất lượng sản xuất"
+      },
+      "fssai": {
+        "desc": "Chứng nhận Cơ quan An toàn và Tiêu chuẩn Thực phẩm Ấn Độ (Lý gai Ấn Độ)",
+        "category": "Chất lượng nguyên liệu"
+      }
+    },
+    "safetyEvidence": {
+      "title": "An toàn của Elderberry",
+      "body": "Trong thử nghiệm lâm sàng với 312 người tham gia (Tiralongo et al., 2016), không phát hiện phản ứng bất lợi nào do chiết xuất elderberry.",
+      "citation": "— Tiralongo E, Wee SS, Lea RA. Elderberry Supplementation Reduces Cold Duration and Symptoms in Air-Travellers: A Randomized, Double-Blind Placebo-Controlled Clinical Trial. Nutrients. 2016;8(4):182."
+    },
+    "pharmacyOnly": {
+      "badge": "Pharmacy Only",
+      "title": {
+        "line1": "Chỉ có thể mua",
+        "line2": "tại nhà thuốc"
+      },
+      "body": "Cellromax Siro Sức Khỏe Trẻ Em là sản phẩm chỉ bán tại nhà thuốc. Vui lòng tham khảo ý kiến dược sĩ để chọn sản phẩm và dạng bào chế phù hợp nhất cho con bạn.",
+      "cta": "Tìm nhà thuốc gần nhất"
+    }
+  },
+
+  "formats": {
+    "headline": {
+      "line1": "Phù hợp với lối sống của bé",
+      "highlight": "lựa chọn hoàn hảo"
+    },
+    "subtitle": {
+      "line1": "Ở nhà, khi ra ngoài, trong tay bé.",
+      "line2": "Ba dạng bào chế để chọn theo từng tình huống."
+    },
+    "products": {
+      "syrup": {
+        "name": "Siro Sức Khỏe",
+        "volume": "500ml",
+        "tagline": "Dạng cơ bản để uống hàng ngày tại nhà",
+        "desc": "Dung tích lớn kinh tế, phù hợp cho việc bổ sung dinh dưỡng đều đặn. 10ml mỗi lần, ngày một lần bằng cốc đo đi kèm.",
+        "useCase": "Hàng ngày tại nhà",
+        "character": "Khủng long xanh lá"
+      },
+      "stick": {
+        "name": "Siro Sức Khỏe dạng gói",
+        "volume": "10ml × 30 gói",
+        "tagline": "Dạng gói tiện lợi cho đi chơi, du lịch và nhà trẻ",
+        "desc": "Đóng gói riêng lẻ vệ sinh, không cần đo lường, chỉ cần cho bé uống nguyên một gói.",
+        "useCase": "Đi chơi · Du lịch",
+        "character": "Khủng long xanh ngọc"
+      },
+      "jjayo": {
+        "name": "Siro Sức Khỏe dạng bóp",
+        "volume": "20g × 40 gói",
+        "tagline": "Túi bóp vui nhộn bé tự bóp ăn",
+        "desc": "Trải nghiệm tự bóp và ăn giúp phát triển tính tự lập của bé và bổ sung dinh dưỡng một cách vui vẻ.",
+        "extra": "Mỗi gói dạng bóp chứa lượng tương đương 20ml sản phẩm siro ở dạng thạch, khuyến nghị cho trẻ từ 2 tuổi trở lên.",
+        "useCase": "Bé tự ăn",
+        "character": "Khủng long xanh ngọc"
+      }
+    },
+    "characterSuffix": " cùng giờ dinh dưỡng",
+    "expandButton": {
+      "expand": "Xem thêm",
+      "collapse": "Thu gọn"
+    }
+  },
+
+  "pharmacy": {
+    "headline": {
+      "line1": "Tìm tại",
+      "highlight": "nhà thuốc gần nhất"
+    },
+    "subtitle": {
+      "line1": "Cellromax Siro Sức Khỏe Trẻ Em là sản phẩm chỉ bán tại nhà thuốc.",
+      "line2": "Tìm kiếm nhà thuốc có bán sản phẩm gần bạn."
+    },
+    "search": {
+      "placeholder": "Nhập tên khu vực hoặc tên nhà thuốc",
+      "button": "Tìm nhà thuốc"
+    },
+    "map": {
+      "preparing": "Tính năng tìm nhà thuốc sắp ra mắt",
+      "callGuide": "Vui lòng gọi cho chúng tôi để được hướng dẫn nhà thuốc gần nhất"
+    },
+    "notice": "Vui lòng gọi trước cho nhà thuốc để xác nhận loại sản phẩm và tình trạng còn hàng",
+    "contact": {
+      "label": "Liên hệ: Trung tâm khách hàng"
+    }
+  },
+
+  "faq": {
+    "headline": "Câu hỏi thường gặp",
+    "items": [
+      {
+        "q": "Bé mấy tuổi có thể bắt đầu uống?",
+        "a": "Có thể uống từ 1 tuổi trở lên. Khi bắt đầu lần đầu, chúng tôi khuyên bắt đầu với lượng nhỏ để quan sát phản ứng của bé."
+      },
+      {
+        "q": "Mỗi ngày nên cho bé uống bao nhiêu?",
+        "a": "Khuyến nghị 10ml mỗi ngày một lần. Với siro, sử dụng cốc đo đi kèm. Với dạng gói và dạng bóp, mỗi gói là một liều."
+      },
+      {
+        "q": "Nên chọn siro, dạng gói hay dạng bóp?",
+        "a": "Cả ba dạng đều chứa cùng thành phần cốt lõi. Nếu uống hàng ngày tại nhà, siro (500ml) kinh tế nhất. Nếu hay ra ngoài, chọn dạng gói (đóng riêng lẻ). Nếu bé thích tự ăn, khuyên dùng dạng bóp. Tham khảo ý kiến dược sĩ sẽ giúp bạn quyết định tốt hơn."
+      },
+      {
+        "q": "Có thể mua trực tuyến không?",
+        "a": "Cellromax Siro Sức Khỏe Trẻ Em là sản phẩm chỉ bán tại nhà thuốc. Vui lòng sử dụng tính năng 'Tìm nhà thuốc' ở trên để tìm nhà thuốc gần bạn."
+      },
+      {
+        "q": "Có thể uống cùng thực phẩm bổ sung khác không?",
+        "a": "Có thể uống cùng thực phẩm thông thường. Tuy nhiên, nếu đang uống các thực phẩm bổ sung dinh dưỡng có thành phần tương tự, chúng tôi khuyên bạn nên tham khảo ý kiến dược sĩ."
+      },
+      {
+        "q": "Elderberry có an toàn cho trẻ em không?",
+        "a": "Chiết xuất elderberry sử dụng trong Cellromax đã được xác nhận an toàn trong các thử nghiệm lâm sàng quốc tế (Tiralongo et al., 2016). Tuy nhiên, nếu bé có cơ địa nhạy cảm hoặc dị ứng, vui lòng tham khảo ý kiến dược sĩ trước khi sử dụng."
+      }
+    ],
+    "cta": {
+      "headline": {
+        "line1": "Mỗi ngày khỏe mạnh hơn cho bé",
+        "highlight": "bắt đầu cùng Cellromax"
+      },
+      "body": {
+        "line1": "Mỗi ngày một lần, thói quen nhỏ",
+        "line2": "tạo nên sự khác biệt lớn cho sự phát triển khỏe mạnh."
+      },
+      "products": {
+        "syrup": "Siro Sức Khỏe",
+        "stick": "Siro Sức Khỏe dạng gói",
+        "jjayo": "Siro Sức Khỏe dạng bóp"
+      },
+      "buttons": {
+        "findPharmacy": "Tìm nhà thuốc gần nhất",
+        "scrollToTop": "Về đầu trang ↑"
+      },
+      "trustBadges": {
+        "pharmacyOnly": "Sản phẩm chỉ bán tại nhà thuốc",
+        "fromAge1": "Từ 1 tuổi trở lên"
+      }
+    }
+  },
+
+  "footer": {
+    "brandTagline": "Thương hiệu giải pháp sức khỏe cao cấp",
+    "disclaimer": {
+      "title": "Lưu ý",
+      "items": [
+        "Sản phẩm này không phải là thuốc dùng để phòng ngừa và điều trị bệnh.",
+        "Kết quả thử nghiệm lâm sàng được quan sát trong điều kiện nghiên cứu cụ thể và kết quả cá nhân có thể khác nhau.",
+        "Vui lòng tham khảo ý kiến dược sĩ trước khi sử dụng.",
+        "Nếu có cơ địa nhạy cảm hoặc dị ứng, vui lòng kiểm tra thành phần trước khi sử dụng."
+      ]
+    },
+    "company": {
+      "name": "Cellromax Science Co., Ltd. | Giám đốc: Seo Jeong-min",
+      "bizNumber": "Số đăng ký kinh doanh: 125-86-27262 | Số đăng ký bán hàng qua thư: 2018-Yongin Giheung-0828",
+      "address": "106, D-dong 1F, 357 Guseong-ro, Giheung-gu, Yongin-si, Gyeonggi-do, Hàn Quốc (Yongin Technovalley, Cheongdeok-dong)",
+      "customerCenter": "Trung tâm khách hàng:",
+      "customerCenterHours": "(Ngày làm việc 09:00–17:00, Nghỉ trưa 12:30–13:30 / Nghỉ cuối tuần và ngày lễ)",
+      "emailLabel": "Email:",
+      "privacyOfficer": "Người phụ trách bảo vệ thông tin cá nhân: Yang In-gyu",
+      "insurance": "Bảo hiểm trách nhiệm thông tin cá nhân (Ⅱ): Meritz Fire Insurance"
+    },
+    "links": {
+      "privacy": "Chính sách bảo mật",
+      "terms": "Điều khoản sử dụng",
+      "bizInfo": "Thông tin doanh nghiệp"
+    },
+    "copyright": "© 2026 Cellromax. All rights reserved."
+  },
+
+  "productInfo": {
+    "sectionTitle": "Thông tin sản phẩm",
+    "category": "Phân loại",
+    "tabs": {
+      "syrup": "Siro",
+      "stick": "Dạng gói",
+      "jjayo": "Dạng bóp"
+    },
+    "rowLabels": {
+      "name": "Tên sản phẩm",
+      "foodType": "Loại thực phẩm",
+      "manufacturer": "Nhà sản xuất",
+      "ingredients": "Nguyên liệu và hàm lượng",
+      "allergen": "Chất gây dị ứng",
+      "intake": "Liều lượng và cách dùng",
+      "caution": "Lưu ý khi sử dụng",
+      "storage": "Bảo quản"
+    },
+    "commonRows": {
+      "gmo": {
+        "label": "Biến đổi gen",
+        "value": "Không áp dụng"
+      }
+    },
+    "expandButton": {
+      "expand": "Xem thêm",
+      "collapse": "Thu gọn"
+    }
+  },
+
+  "common": {
+    "brandName": "Cellromax",
+    "productLineName": "Siro Sức Khỏe Trẻ Em",
+    "pharmacyOnly": "Chỉ bán tại nhà thuốc",
+    "fromAge1": "Từ 1 tuổi trở lên",
+    "findPharmacy": "Tìm nhà thuốc gần nhất",
+    "learnMore": "Xem chi tiết",
+    "collapse": "Thu gọn",
+    "expand": "Xem thêm"
+  },
+
+  "languageSwitcher": {
+    "label": "Ngôn ngữ",
+    "ko": "한국어",
+    "en": "English",
+    "zh": "中文",
+    "vi": "Tiếng Việt"
+  }
+}

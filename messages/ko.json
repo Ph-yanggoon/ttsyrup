@@ -1,0 +1,459 @@
+{
+  "metadata": {
+    "title": "셀로맥스 어린이튼튼시럽 | 엘더베리로 채우는 우리 아이 건강",
+    "description": "유럽산 엘더베리, 프리바이오틱스, 아미노산 7종 등 6가지 핵심 영양을 담은 어린이 건강시럽. 약국 전용, 만 1세부터.",
+    "ogTitle": "셀로맥스 어린이튼튼시럽",
+    "ogDescription": "하루 한 번, 엘더베리의 힘으로 우리 아이 건강을 채우다",
+    "keywords": "어린이튼튼시럽,셀로맥스,엘더베리,어린이건강,약국전용,프리바이오틱스,아미노산"
+  },
+
+  "hero": {
+    "badges": {
+      "pharmacyOnly": "약국 전용",
+      "fromAge1": "만 1세부터"
+    },
+    "headline": {
+      "line1": "하루 한 번,",
+      "line2": "엘더베리의 힘으로",
+      "highlight": "우리 아이 건강",
+      "suffix": "을 채우다"
+    },
+    "subcopy": {
+      "ingredients": "엘더베리 · 프리바이오틱스 · 아미노산 · 칼슘 · 비타민C · 비타민B",
+      "description": "6가지 핵심 영양소를 하나에 담은 어린이 영양 시럽"
+    },
+    "body": {
+      "line1": "오스트리아산 프리미엄 엘더베리를 중심으로,",
+      "line2": "성장기 어린이에게 꼭 필요한 영양소를 한 병에 설계했습니다.",
+      "line3": "약국에서만 만날 수 있는 셀로맥스 어린이튼튼시럽."
+    },
+    "cta": {
+      "viewIngredients": "성분 자세히 보기 ↓",
+      "findPharmacy": "가까운 약국 찾기"
+    },
+    "scrollHint": "Scroll",
+    "products": {
+      "syrup": "어린이튼튼시럽",
+      "stick": "어린이튼튼시럽스틱",
+      "jjayo": "어린이튼튼짜요"
+    }
+  },
+
+  "elderberry": {
+    "headline": {
+      "line1": "유럽이 수백 년간 지켜온 보랏빛 열매",
+      "highlight": "엘더베리"
+    },
+    "subtitle": "블루베리보다 풍부한 안토시아닌",
+    "imageAlt": "엘더베리 열매",
+    "origin": {
+      "badge": "원산지 이야기",
+      "title": {
+        "line1": "오스트리아 슈타이어마르크에서 자란",
+        "line2": "프리미엄 엘더베리"
+      },
+      "body1": "셀로맥스 어린이튼튼시럽의 엘더베리는 오스트리아 슈타이어마르크(Steiermark) 지역에서 재배한 Haschberg 품종을 사용합니다.",
+      "body2": "유럽에서 수백 년간 환절기 건강 관리에 활용되어 온 전통 원료입니다.",
+      "imageAlt": "오스트리아 슈타이어마르크 엘더베리"
+    },
+    "anthocyanin": {
+      "badge": "안토시아닌 함량 비교",
+      "title": "안토시아닌 — 보랏빛에 담긴 항산화 성분",
+      "intro": "엘더베리의 깊은 보랏빛은 안토시아닌이 풍부하다는 증거입니다.",
+      "labels": {
+        "elderberry": "엘더베리",
+        "blueberry": "블루베리"
+      },
+      "chartUnit": "mg / 100g",
+      "citation": "출처: Wu et al., J Agric Food Chem (2006)",
+      "explanation": "안토시아닌(Anthocyanin)은 식물의 꽃, 과일, 잎 등에 존재하는 천연 색소로, 보라색·빨간색·파란색을 만들어내는 플라보노이드 계열의 성분입니다. 항산화 영양소로 알려져 있으며, 색이 진할수록 안토시아닌 함량이 높은 경향이 있습니다. 엘더베리는 대표적인 안토시아닌 공급원 중 하나로, 블루베리 대비 최대 약 4.7배 높은 안토시아닌 함량이 보고되어 있습니다.",
+      "explanationKeyword": "안토시아닌(Anthocyanin)"
+    },
+    "nutritionTable": {
+      "badge": "엘더베리의 영양성분",
+      "title": "영양가득 엘더베리의 영양성분",
+      "centerBadge": {
+        "line1": "영양가득",
+        "line2": "엘더베리의",
+        "line3": "영양성분"
+      },
+      "perUnit": "(per 100g)",
+      "minerals": {
+        "title": "Minerals",
+        "potassium": "칼륨",
+        "phosphorus": "인",
+        "calcium": "칼슘",
+        "sodium": "나트륨",
+        "magnesium": "마그네슘",
+        "iron": "철",
+        "zinc": "아연"
+      },
+      "vitamins": {
+        "title": "Vitamins",
+        "vitaminC": "비타민C",
+        "niacin": "나이아신",
+        "pyridoxine": "피라독신",
+        "thiamine": "티아민",
+        "riboflavin": "리보플라빈",
+        "vitaminA": "비타민A",
+        "folate": "엽산"
+      },
+      "citation": "출처: 농촌진흥청 국가표준식품성분표 '엘더베리, 생것' 기준"
+    },
+    "disclaimer": "해당 정보는 제품과 관련 없는 원료에 대한 설명입니다"
+  },
+
+  "nutrition": {
+    "headline": {
+      "line1": "성장기에 꼭 필요한 영양",
+      "highlight": "균형 있게",
+      "suffix": "담았습니다"
+    },
+    "subtitle": {
+      "line1": "아미노산 7종 + 수용성 발효 칼슘 + 식물 유래 비타민B",
+      "line2": "하루 한 번으로 채우는 성장의 기초"
+    },
+    "radarChart": {
+      "ariaLabel": "영양 밸런스 레이더 차트",
+      "centerLabel": "영양 밸런스",
+      "axes": {
+        "elderberry": "엘더베리",
+        "aminoAcid": "아미노산",
+        "prebiotics": "프리바이오틱스",
+        "vitaminB": "비타민B",
+        "vitaminC": "비타민C",
+        "calcium": "칼슘"
+      },
+      "disclaimer": "*각 성분의 영양학적 역할을 기반으로 구성한 개념도입니다"
+    },
+    "quickStats": {
+      "premium": {
+        "title": "프리미엄 원료",
+        "desc": "6가지 핵심영양소"
+      },
+      "aminoAcid": {
+        "title": "아미노산",
+        "desc": "BCAA 포함 7종"
+      },
+      "vitaminBC": {
+        "title": "비타민 B&C",
+        "desc": "레몬·홀리바질·구아바·구스베리 유래"
+      },
+      "calcium": {
+        "title": "이온화칼슘",
+        "desc": "패각 발효 수용성 이온화 미네랄"
+      }
+    },
+    "cards": {
+      "aminoAcid": {
+        "title": "단백질의 기초, 아미노산 7종",
+        "body": "성장기 어린이의 몸은 매일 새로운 세포를 만들어냅니다. 그 기초가 되는 것이 바로 아미노산입니다. 셀로맥스는 BCAA(발린·류신·이소류신)를 포함한 7종의 아미노산을 담았습니다.",
+        "detail": "그중 L-아르기닌은 성장기 어린이의 건강한 발달을 돕는 것으로 알려진 반필수 아미노산이며, L-글루타민은 장 점막의 주요 에너지원으로 알려진 아미노산입니다.",
+        "tags": ["BCAA 3종", "L-아르기닌", "L-글루타민", "+2종"]
+      },
+      "calcium": {
+        "title": "물에 녹는 칼슘, 그래서 다릅니다",
+        "body": "칼슘은 많이 먹는 것보다 잘 흡수되는 것이 중요합니다. 셀로맥스의 수용성 발효 칼슘은 청정해역 패각을 자연 발효하여 만든 100% 수용성 이온화 칼슘입니다.",
+        "detail": "화학용매 없이 발효 공정만으로 추출해, 체내 흡수에 유리한 형태를 갖추었습니다.",
+        "tags": ["수용성 이온화", "자연 발효", "흡수 유리"]
+      },
+      "vitaminBC": {
+        "title": "식물에서 온 비타민 B&C",
+        "body": "구아바, 홀리바질, 레몬에는 비타민 B군이 인디언구스베리에는 비타민 C가 풍부하게 함유되어 있습니다.",
+        "detail": "어린이에게 필요한 비타민 B1·B2·B3·B5·B6·B9 6종과 비타민 C를 한 번에 섭취할 수 있습니다.",
+        "tags": ["구아바", "홀리바질", "레몬", "인디언구스베리"]
+      }
+    },
+    "expandButton": {
+      "expand": "자세히 보기 →",
+      "collapse": "접기"
+    }
+  },
+
+  "ingredients": {
+    "headline": {
+      "line1": "자연에서 찾은 원료",
+      "highlight": "과학으로 설계한",
+      "suffix": "배합"
+    },
+    "subtitle": "각 성분의 특성을 살려, 아이의 몸에 맞게 구성했습니다.",
+    "cards": {
+      "duoligo": {
+        "tagLabel": "장 건강",
+        "title": "듀올리고 — 검증된 프리바이오틱스",
+        "body": "장 속 유익균의 먹이로 이용되는 프리바이오틱스 성분 중 모유에 함유되어 있다고 알려진 갈락토올리고당(GOS)과 락툴로스를 함께 담았습니다.",
+        "detail": "GOS를 보충한 영유아 대상 다기관 임상시험에서, 비피더스균과 유산균의 성장이 촉진되고 유해균은 억제되는 결과가 확인되었습니다.",
+        "citation": "Giovannini et al., J Am Coll Nutr (2014), 다기관 RCT",
+        "highlights": {
+          "lactulose": { "label": "락툴로스", "desc": "장내 유익균 영양원" },
+          "gos": { "label": "GOS", "desc": "갈락토올리고당" }
+        }
+      },
+      "amla": {
+        "tagLabel": "비타민C",
+        "title": "인디언구스베리 — 비타민C가 풍부한 열매",
+        "body": "인도 아유르베다에서 오랜 시간 활용해온 슈퍼푸드, 암라. 비타민C가 매우 풍부한 것으로 알려져 있습니다.",
+        "detail": "일반 비타민C(아스코르브산)는 열과 빛에 쉽게 파괴되지만, 암라의 비타민C는 갈릭산·탄닌과 결합한 자연 보호 구조 덕분에 열에도 안정적으로 유지됩니다.",
+        "highlights": {
+          "amla": { "label": "암라", "desc": "인디언구스베리" },
+          "vitaminC": { "label": "비타민C", "desc": "유익한 구조로 함유" }
+        }
+      },
+      "monkfruit": {
+        "tagLabel": "천연 감미",
+        "title": "나한과 — 자연이 만든 단맛",
+        "body": "나한과(Monk Fruit)는 중국 남부 구이린 지역에서 건강에 유익한 열매로 옛부터 활용되어왔습니다. 설탕보다 250배에 달하는 단맛을 갖고 있지만 칼로리는 거의 없는 안전한 감미료 역할도 합니다.",
+        "detail": "아이들이 먹는 제품이기에 감미료까지 건강한 원료로 선택했습니다. 나한과는 미국 FDA에서 GRAS(일반적으로 안전하다고 인정) 등급을 받은 안전한 자연 유래 원료입니다.",
+        "highlights": {
+          "zeroCal": { "label": "제로 칼로리", "desc": "설탕 대비 250배 단맛" },
+          "fdaGras": { "label": "FDA GRAS", "desc": "안전성 인정" }
+        }
+      }
+    },
+    "expandButton": {
+      "expand": "성분 상세 보기 →",
+      "collapse": "접기 ↑"
+    }
+  },
+
+  "safety": {
+    "headline": {
+      "line1": "아이가 먹는 것이니까",
+      "line2prefix": "기준은",
+      "highlight": "더 엄격하게"
+    },
+    "subtitle": {
+      "line1": "글로벌 인증 원료와 의약품 수준의 제조 관리.",
+      "line2": "셀로맥스는 안전을 타협하지 않습니다."
+    },
+    "certs": {
+      "gmp": {
+        "desc": "의약품 수준의 제조·품질 관리 기준",
+        "category": "제조 품질"
+      },
+      "fssc": {
+        "desc": "국제 식품안전경영시스템 인증",
+        "category": "제조 품질"
+      },
+      "iso": {
+        "desc": "국제표준화기구 품질인증",
+        "category": "제조 품질"
+      },
+      "fssai": {
+        "desc": "인도 식품안전표준국 인증 (인디언구스베리)",
+        "category": "원료 품질"
+      }
+    },
+    "safetyEvidence": {
+      "title": "엘더베리의 안전성",
+      "body": "312명 대상 임상시험(Tiralongo et al., 2016)에서 엘더베리 추출물에 기인한 이상반응은 확인되지 않았습니다.",
+      "citation": "— Tiralongo E, Wee SS, Lea RA. Elderberry Supplementation Reduces Cold Duration and Symptoms in Air-Travellers: A Randomized, Double-Blind Placebo-Controlled Clinical Trial. Nutrients. 2016;8(4):182."
+    },
+    "pharmacyOnly": {
+      "badge": "Pharmacy Only",
+      "title": {
+        "line1": "약국에서만",
+        "line2": "만날 수 있습니다"
+      },
+      "body": "셀로맥스 어린이튼튼시럽은 약국 전용 제품입니다. 우리 아이에게 꼭 맞는 제품과 제형을 약사님과 상담 후에 섭취하세요.",
+      "cta": "가까운 약국 찾기"
+    }
+  },
+
+  "formats": {
+    "headline": {
+      "line1": "우리 아이 생활에 맞는",
+      "highlight": "딱 맞는 한 가지"
+    },
+    "subtitle": {
+      "line1": "집에서, 밖에서, 아이 손에서.",
+      "line2": "세 가지 제형으로 상황에 맞게 선택하세요."
+    },
+    "products": {
+      "syrup": {
+        "name": "어린이튼튼시럽",
+        "volume": "500ml",
+        "tagline": "가정에서 매일 먹이기 좋은 기본형",
+        "desc": "경제적인 대용량으로 꾸준한 영양 관리에 적합합니다. 계량컵으로 1회 10ml, 하루 한 번.",
+        "useCase": "집에서 매일",
+        "character": "초록 공룡"
+      },
+      "stick": {
+        "name": "어린이튼튼스틱",
+        "volume": "10ml × 30포",
+        "tagline": "외출, 여행, 어린이집에 가져가기 좋은 휴대형",
+        "desc": "개별 포장이라 위생적이고, 따로 계량할 필요 없이 한 포를 그대로 먹이면 됩니다.",
+        "useCase": "외출·여행",
+        "character": "청록 공룡"
+      },
+      "jjayo": {
+        "name": "어린이튼튼짜요",
+        "volume": "20g × 40포",
+        "tagline": "아이가 직접 짜서 먹는 재미있는 파우치형",
+        "desc": "스스로 짜먹는 경험이 아이의 자율성을 길러주고, 거부감 없이 즐겁게 영양을 섭취할 수 있습니다.",
+        "extra": "어린이 튼튼짜요 1포는 시럽제품의 20ml에 해당하는 용량이 젤리 제형에 담겨 있어 만 2세 이상부터 섭취를 권장합니다.",
+        "useCase": "아이 스스로",
+        "character": "청록 공룡"
+      }
+    },
+    "characterSuffix": "와 함께하는 영양 시간",
+    "expandButton": {
+      "expand": "더보기",
+      "collapse": "접기"
+    }
+  },
+
+  "pharmacy": {
+    "headline": {
+      "line1": "가까운 약국에서",
+      "highlight": "만나보세요"
+    },
+    "subtitle": {
+      "line1": "셀로맥스 어린이튼튼시럽은 약국 전용 제품입니다.",
+      "line2": "현재 위치 기반으로 가까운 취급 약국을 찾아보세요."
+    },
+    "search": {
+      "placeholder": "지역명 또는 약국명을 입력하세요",
+      "button": "약국 검색"
+    },
+    "map": {
+      "preparing": "약국 검색 기능은 준비 중입니다",
+      "callGuide": "전화로 문의해 주시면 가까운 약국을 안내해 드립니다"
+    },
+    "notice": "해당 약국의 제품 종류와 재고 여부를 전화로 문의 후 방문하시기 바랍니다",
+    "contact": {
+      "label": "문의: 고객센터"
+    }
+  },
+
+  "faq": {
+    "headline": "자주 묻는 질문",
+    "items": [
+      {
+        "q": "몇 살부터 먹일 수 있나요?",
+        "a": "만 1세 이상부터 섭취할 수 있습니다. 처음 시작할 때는 소량부터 시작해 아이의 반응을 살펴보시는 것을 권장합니다."
+      },
+      {
+        "q": "하루에 얼마나 먹이면 되나요?",
+        "a": "1일 1회, 10ml를 권장합니다. 시럽은 동봉된 계량컵으로, 스틱과 짜요는 1포가 1회 분량입니다."
+      },
+      {
+        "q": "시럽, 스틱, 짜요 중 어떤 걸 선택해야 하나요?",
+        "a": "세 제형 모두 동일한 핵심 성분을 담고 있습니다. 집에서 매일 먹인다면 시럽(500ml)이 경제적이고, 외출이 잦다면 스틱(개별 포장), 아이가 스스로 먹는 걸 좋아한다면 짜요를 추천합니다. 약국에서 약사와 상담 후 선택하시면 더 좋습니다."
+      },
+      {
+        "q": "온라인에서 구매할 수 있나요?",
+        "a": "셀로맥스 어린이튼튼시럽은 약국 전용 제품으로, 가까운 약국에서만 구매하실 수 있습니다. 상단의 '약국 찾기'를 통해 가까운 취급 약국을 검색해 보세요."
+      },
+      {
+        "q": "다른 영양제와 함께 먹여도 되나요?",
+        "a": "일반적인 식품과 함께 섭취할 수 있습니다. 다만, 유사한 성분의 다른 영양 보충제를 함께 드시는 경우 약사와 상담하시기를 권장합니다."
+      },
+      {
+        "q": "엘더베리가 아이에게 안전한가요?",
+        "a": "셀로맥스에 사용된 엘더베리 추출물은 국제 임상시험에서 안전성이 확인된 원료입니다(Tiralongo et al., 2016). 단, 특이 체질이거나 알레르기가 있는 경우 섭취 전 약사와 상담해 주세요."
+      }
+    ],
+    "cta": {
+      "headline": {
+        "line1": "우리 아이의 튼튼한 매일",
+        "highlight": "셀로맥스와 함께 시작하세요"
+      },
+      "body": {
+        "line1": "하루 한 번, 작은 습관이",
+        "line2": "건강한 성장의 큰 차이를 만듭니다."
+      },
+      "products": {
+        "syrup": "어린이튼튼시럽",
+        "stick": "어린이튼튼스틱",
+        "jjayo": "어린이튼튼짜요"
+      },
+      "buttons": {
+        "findPharmacy": "가까운 약국 찾기",
+        "scrollToTop": "맨 위로 돌아가기 ↑"
+      },
+      "trustBadges": {
+        "pharmacyOnly": "약국 전용 제품",
+        "fromAge1": "만 1세부터"
+      }
+    }
+  },
+
+  "footer": {
+    "brandTagline": "프리미엄 건강 솔루션 전문 브랜드",
+    "disclaimer": {
+      "title": "안내사항",
+      "items": [
+        "본 제품은 질병의 예방 및 치료를 위한 의약품이 아닙니다.",
+        "임상시험 결과는 해당 연구의 특정 조건에서 확인된 것으로, 개인에 따라 결과가 다를 수 있습니다.",
+        "섭취 전 약사와 상담하시기 바랍니다.",
+        "특이 체질이거나 알레르기 체질인 경우, 성분을 확인하신 후 섭취하십시오."
+      ]
+    },
+    "company": {
+      "name": "(주)셀로맥스사이언스 | 대표: 서정민",
+      "bizNumber": "사업자등록번호: 125-86-27262 | 통신판매업신고: 2018-용인기흥-0828",
+      "address": "경기도 용인시 기흥구 구성로 357 디동 1층 106호 용인테크노밸리(청덕동)",
+      "customerCenter": "고객센터:",
+      "customerCenterHours": "(평일 09:00~17:00, 점심 12:30~13:30 / 토·일·공휴일 휴무)",
+      "emailLabel": "이메일:",
+      "privacyOfficer": "개인정보관리책임자: 양인규",
+      "insurance": "개인정보보호배상책임보험(Ⅱ) 가입: 메리츠화재"
+    },
+    "links": {
+      "privacy": "개인정보처리방침",
+      "terms": "이용약관",
+      "bizInfo": "사업자정보확인"
+    },
+    "copyright": "© 2026 Cellromax. All rights reserved."
+  },
+
+  "productInfo": {
+    "sectionTitle": "제품 기본정보",
+    "category": "구분",
+    "tabs": {
+      "syrup": "시럽",
+      "stick": "스틱",
+      "jjayo": "짜요"
+    },
+    "rowLabels": {
+      "name": "제품명",
+      "foodType": "식품유형",
+      "manufacturer": "제조원",
+      "ingredients": "원재료명 및 함량",
+      "allergen": "알레르기",
+      "intake": "섭취량·섭취방법",
+      "caution": "섭취 시 주의사항",
+      "storage": "보관방법"
+    },
+    "commonRows": {
+      "gmo": {
+        "label": "유전자재조합",
+        "value": "해당없음"
+      }
+    },
+    "expandButton": {
+      "expand": "더보기",
+      "collapse": "접기"
+    }
+  },
+
+  "common": {
+    "brandName": "셀로맥스",
+    "productLineName": "어린이튼튼시럽",
+    "pharmacyOnly": "약국 전용",
+    "fromAge1": "만 1세부터",
+    "findPharmacy": "가까운 약국 찾기",
+    "learnMore": "자세히 보기",
+    "collapse": "접기",
+    "expand": "더보기"
+  },
+
+  "languageSwitcher": {
+    "label": "언어",
+    "ko": "한국어",
+    "en": "English",
+    "zh": "中文",
+    "vi": "Tiếng Việt"
+  }
+}

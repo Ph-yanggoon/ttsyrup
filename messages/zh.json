@@ -1,0 +1,459 @@
+{
+  "metadata": {
+    "title": "Cellromax 儿童健康糖浆 | 接骨木莓守护孩子健康",
+    "description": "含欧洲接骨木莓、益生元、7种氨基酸等6大核心营养的儿童健康糖浆。药房专售，适合1岁以上。",
+    "ogTitle": "Cellromax 儿童健康糖浆",
+    "ogDescription": "每天一次，用接骨木莓的力量守护孩子健康",
+    "keywords": "儿童健康糖浆,Cellromax,接骨木莓,儿童健康,药房专售,益生元,氨基酸"
+  },
+
+  "hero": {
+    "badges": {
+      "pharmacyOnly": "药房专售",
+      "fromAge1": "1岁以上适用"
+    },
+    "headline": {
+      "line1": "每天一次，",
+      "line2": "用接骨木莓的力量，",
+      "highlight": "守护孩子健康",
+      "suffix": ""
+    },
+    "subcopy": {
+      "ingredients": "接骨木莓 · 益生元 · 氨基酸 · 钙 · 维生素C · 维生素B",
+      "description": "6大核心营养素汇于一瓶的儿童营养糖浆"
+    },
+    "body": {
+      "line1": "以奥地利优质接骨木莓为核心，",
+      "line2": "将成长期儿童所需的必要营养素精心融于一瓶。",
+      "line3": "Cellromax 儿童健康糖浆——仅在药房有售。"
+    },
+    "cta": {
+      "viewIngredients": "查看成分详情 ↓",
+      "findPharmacy": "查找附近药房"
+    },
+    "scrollHint": "Scroll",
+    "products": {
+      "syrup": "儿童健康糖浆",
+      "stick": "儿童健康糖浆条",
+      "jjayo": "儿童健康挤挤乐"
+    }
+  },
+
+  "elderberry": {
+    "headline": {
+      "line1": "欧洲守护数百年的紫色浆果",
+      "highlight": "接骨木莓"
+    },
+    "subtitle": "花青素含量远超蓝莓",
+    "imageAlt": "接骨木莓果实",
+    "origin": {
+      "badge": "产地故事",
+      "title": {
+        "line1": "生长于奥地利施泰尔马克的",
+        "line2": "优质接骨木莓"
+      },
+      "body1": "Cellromax 儿童健康糖浆使用的接骨木莓，是在奥地利施泰尔马克（Steiermark）地区种植的Haschberg品种。",
+      "body2": "这是欧洲数百年来用于换季健康管理的传统原料。",
+      "imageAlt": "奥地利施泰尔马克接骨木莓"
+    },
+    "anthocyanin": {
+      "badge": "花青素含量对比",
+      "title": "花青素——紫色中蕴含的抗氧化成分",
+      "intro": "接骨木莓深邃的紫色正是其花青素丰富的证据。",
+      "labels": {
+        "elderberry": "接骨木莓",
+        "blueberry": "蓝莓"
+      },
+      "chartUnit": "mg / 100g",
+      "citation": "来源：Wu et al., J Agric Food Chem (2006)",
+      "explanation": "花青素是存在于植物花朵、果实、叶片中的天然色素，属于类黄酮家族，能产生紫色、红色和蓝色。作为抗氧化营养素，颜色越深，花青素含量通常越高。接骨木莓是花青素的代表性来源之一，据报道其含量最高可达蓝莓的约4.7倍。",
+      "explanationKeyword": "花青素（Anthocyanin）"
+    },
+    "nutritionTable": {
+      "badge": "接骨木莓营养成分",
+      "title": "营养丰富的接骨木莓成分",
+      "centerBadge": {
+        "line1": "营养丰富",
+        "line2": "接骨木莓的",
+        "line3": "营养成分"
+      },
+      "perUnit": "(per 100g)",
+      "minerals": {
+        "title": "Minerals",
+        "potassium": "钾",
+        "phosphorus": "磷",
+        "calcium": "钙",
+        "sodium": "钠",
+        "magnesium": "镁",
+        "iron": "铁",
+        "zinc": "锌"
+      },
+      "vitamins": {
+        "title": "Vitamins",
+        "vitaminC": "维生素C",
+        "niacin": "烟酸",
+        "pyridoxine": "吡哆醇",
+        "thiamine": "硫胺素",
+        "riboflavin": "核黄素",
+        "vitaminA": "维生素A",
+        "folate": "叶酸"
+      },
+      "citation": "来源：国家标准食品成分表'接骨木莓，鲜果'数据"
+    },
+    "disclaimer": "以上信息为原料说明，与产品无直接关联"
+  },
+
+  "nutrition": {
+    "headline": {
+      "line1": "成长期必需的营养",
+      "highlight": "均衡配比",
+      "suffix": "精心配制"
+    },
+    "subtitle": {
+      "line1": "7种氨基酸 + 水溶性发酵钙 + 植物来源维生素B",
+      "line2": "每天一次，筑牢成长基础"
+    },
+    "radarChart": {
+      "ariaLabel": "营养均衡雷达图",
+      "centerLabel": "营养均衡",
+      "axes": {
+        "elderberry": "接骨木莓",
+        "aminoAcid": "氨基酸",
+        "prebiotics": "益生元",
+        "vitaminB": "维生素B",
+        "vitaminC": "维生素C",
+        "calcium": "钙"
+      },
+      "disclaimer": "*本图为基于各成分营养学作用构建的概念图"
+    },
+    "quickStats": {
+      "premium": {
+        "title": "优质原料",
+        "desc": "6大核心营养素"
+      },
+      "aminoAcid": {
+        "title": "氨基酸",
+        "desc": "含BCAA在内共7种"
+      },
+      "vitaminBC": {
+        "title": "维生素B和C",
+        "desc": "源自柠檬·圣罗勒·番石榴·醋栗"
+      },
+      "calcium": {
+        "title": "离子化钙",
+        "desc": "贝壳发酵水溶性离子化矿物质"
+      }
+    },
+    "cards": {
+      "aminoAcid": {
+        "title": "蛋白质的基础，7种氨基酸",
+        "body": "成长中的儿童身体每天都在制造新细胞，氨基酸正是其基础。Cellromax含有包括BCAA（缬氨酸、亮氨酸、异亮氨酸）在内的7种氨基酸。",
+        "detail": "其中，L-精氨酸是一种已知有助于成长期儿童健康发育的半必需氨基酸，L-谷氨酰胺则是已知的肠道黏膜主要能量来源。",
+        "tags": ["BCAA 3种", "L-精氨酸", "L-谷氨酰胺", "+2种"]
+      },
+      "calcium": {
+        "title": "水溶性钙，效果更不同",
+        "body": "钙的吸收比摄入量更重要。Cellromax的水溶性发酵钙是以清洁海域贝壳通过天然发酵制成的100%水溶性离子化钙。",
+        "detail": "仅通过发酵工艺提取，不使用化学溶剂，具有有利于体内吸收的形态。",
+        "tags": ["水溶性离子化", "天然发酵", "易于吸收"]
+      },
+      "vitaminBC": {
+        "title": "源自植物的维生素B和C",
+        "body": "番石榴、圣罗勒、柠檬富含B族维生素，印度醋栗则含有丰富的维生素C。",
+        "detail": "儿童可一次摄取维生素B1、B2、B3、B5、B6、B9共6种及维生素C。",
+        "tags": ["番石榴", "圣罗勒", "柠檬", "印度醋栗"]
+      }
+    },
+    "expandButton": {
+      "expand": "查看详情 →",
+      "collapse": "收起"
+    }
+  },
+
+  "ingredients": {
+    "headline": {
+      "line1": "取自自然的原料，",
+      "highlight": "以科学配方",
+      "suffix": "精心调配"
+    },
+    "subtitle": "充分发挥每种成分的特性，专为儿童需求而设计。",
+    "cards": {
+      "duoligo": {
+        "tagLabel": "肠道健康",
+        "title": "DuOligo——经临床验证的益生元",
+        "body": "含有已知存在于母乳中的益生元成分——低聚半乳糖（GOS）和乳果糖，作为肠道有益菌的营养来源。",
+        "detail": "在以婴幼儿为对象补充GOS的多中心临床试验中，双歧杆菌和乳酸菌的生长得到促进，有害菌受到抑制。",
+        "citation": "Giovannini et al., J Am Coll Nutr (2014), 多中心RCT",
+        "highlights": {
+          "lactulose": { "label": "乳果糖", "desc": "肠道有益菌的营养源" },
+          "gos": { "label": "GOS", "desc": "低聚半乳糖" }
+        }
+      },
+      "amla": {
+        "tagLabel": "维生素C",
+        "title": "印度醋栗——富含维生素C的果实",
+        "body": "余甘子（Amla），印度阿育吠陀中使用已久的超级食品，以其极高的维生素C含量而闻名。",
+        "detail": "普通维生素C（抗坏血酸）容易被热和光破坏，但余甘子的维生素C因与没食子酸和鞣酸结合的天然保护结构，即使受热也能保持稳定。",
+        "highlights": {
+          "amla": { "label": "余甘子", "desc": "印度醋栗" },
+          "vitaminC": { "label": "维生素C", "desc": "以有益结构含有" }
+        }
+      },
+      "monkfruit": {
+        "tagLabel": "天然甜味",
+        "title": "罗汉果——大自然的甜味",
+        "body": "罗汉果产自中国南部桂林地区，自古以来就被视为有益健康的果实。其甜度是糖的250倍，却几乎零热量。",
+        "detail": "因为是给孩子食用的产品，我们连甜味剂也选择了健康的原料。罗汉果已获得美国FDA的GRAS（一般公认安全）认证。",
+        "highlights": {
+          "zeroCal": { "label": "零热量", "desc": "甜度为糖的250倍" },
+          "fdaGras": { "label": "FDA GRAS", "desc": "安全性认证" }
+        }
+      }
+    },
+    "expandButton": {
+      "expand": "查看成分详情 →",
+      "collapse": "收起 ↑"
+    }
+  },
+
+  "safety": {
+    "headline": {
+      "line1": "因为是给孩子吃的，",
+      "line2prefix": "标准就要",
+      "highlight": "更加严格"
+    },
+    "subtitle": {
+      "line1": "全球认证原料与药品级制造管理。",
+      "line2": "Cellromax 绝不在安全上妥协。"
+    },
+    "certs": {
+      "gmp": {
+        "desc": "药品级制造与质量管控标准",
+        "category": "制造品质"
+      },
+      "fssc": {
+        "desc": "国际食品安全管理体系认证",
+        "category": "制造品质"
+      },
+      "iso": {
+        "desc": "国际标准化组织质量认证",
+        "category": "制造品质"
+      },
+      "fssai": {
+        "desc": "印度食品安全标准局认证（印度醋栗）",
+        "category": "原料品质"
+      }
+    },
+    "safetyEvidence": {
+      "title": "接骨木莓的安全性",
+      "body": "在312名参与者的临床试验（Tiralongo et al., 2016）中，未发现归因于接骨木莓提取物的不良反应。",
+      "citation": "— Tiralongo E, Wee SS, Lea RA. Elderberry Supplementation Reduces Cold Duration and Symptoms in Air-Travellers: A Randomized, Double-Blind Placebo-Controlled Clinical Trial. Nutrients. 2016;8(4):182."
+    },
+    "pharmacyOnly": {
+      "badge": "Pharmacy Only",
+      "title": {
+        "line1": "仅在药房",
+        "line2": "可以购买"
+      },
+      "body": "Cellromax 儿童健康糖浆是药房专售产品。请咨询药剂师，为您的孩子选择最合适的产品和剂型。",
+      "cta": "查找附近药房"
+    }
+  },
+
+  "formats": {
+    "headline": {
+      "line1": "适合孩子生活方式的",
+      "highlight": "最佳选择"
+    },
+    "subtitle": {
+      "line1": "在家里、外出时、在孩子手中。",
+      "line2": "三种剂型，按需选择。"
+    },
+    "products": {
+      "syrup": {
+        "name": "儿童健康糖浆",
+        "volume": "500ml",
+        "tagline": "适合在家每天服用的基础款",
+        "desc": "经济实惠的大容量装，适合持续的营养管理。使用量杯每次10ml，每天一次。",
+        "useCase": "居家日常",
+        "character": "绿色恐龙"
+      },
+      "stick": {
+        "name": "儿童健康糖浆条",
+        "volume": "10ml × 30包",
+        "tagline": "外出、旅行、带去幼儿园的便携装",
+        "desc": "独立包装更卫生，无需量取，直接一包即可。",
+        "useCase": "外出·旅行",
+        "character": "蓝绿恐龙"
+      },
+      "jjayo": {
+        "name": "儿童健康挤挤乐",
+        "volume": "20g × 40包",
+        "tagline": "孩子自己挤着吃的趣味袋装",
+        "desc": "自己挤着吃的体验培养孩子的自主性，让营养摄取变得轻松有趣。",
+        "extra": "一包挤挤乐含有相当于糖浆产品20ml的用量，为果冻剂型，建议2岁以上儿童食用。",
+        "useCase": "自主食用",
+        "character": "蓝绿恐龙"
+      }
+    },
+    "characterSuffix": "的营养时光",
+    "expandButton": {
+      "expand": "查看更多",
+      "collapse": "收起"
+    }
+  },
+
+  "pharmacy": {
+    "headline": {
+      "line1": "到附近药房",
+      "highlight": "选购"
+    },
+    "subtitle": {
+      "line1": "Cellromax 儿童健康糖浆是药房专售产品。",
+      "line2": "根据您的位置搜索附近的销售药房。"
+    },
+    "search": {
+      "placeholder": "请输入地区名或药房名",
+      "button": "搜索药房"
+    },
+    "map": {
+      "preparing": "药房搜索功能即将上线",
+      "callGuide": "请致电我们，我们将为您推荐附近药房"
+    },
+    "notice": "建议先致电药房确认产品种类和库存后再前往",
+    "contact": {
+      "label": "咨询：客服中心"
+    }
+  },
+
+  "faq": {
+    "headline": "常见问题",
+    "items": [
+      {
+        "q": "几岁可以开始服用？",
+        "a": "1岁以上即可服用。初次服用时建议从少量开始，观察孩子的反应。"
+      },
+      {
+        "q": "每天应该服用多少？",
+        "a": "建议每天1次，每次10ml。糖浆请使用附带的量杯，糖浆条和挤挤乐则每包为一次用量。"
+      },
+      {
+        "q": "糖浆、糖浆条、挤挤乐该如何选择？",
+        "a": "三种剂型含有相同的核心成分。在家每天服用选糖浆（500ml）最经济，经常外出选糖浆条（独立包装），孩子喜欢自己吃则推荐挤挤乐。建议在药房咨询药剂师后选择。"
+      },
+      {
+        "q": "可以在网上购买吗？",
+        "a": "Cellromax 儿童健康糖浆是药房专售产品，仅可在附近药房购买。请使用上方的「查找药房」功能搜索附近的销售药房。"
+      },
+      {
+        "q": "可以和其他营养品一起服用吗？",
+        "a": "可以与普通食品一起服用。但如果同时服用含有相似成分的其他营养补充剂，建议咨询药剂师。"
+      },
+      {
+        "q": "接骨木莓对孩子安全吗？",
+        "a": "Cellromax使用的接骨木莓提取物已在国际临床试验中确认其安全性（Tiralongo et al., 2016）。但如果孩子属于过敏体质，请在服用前咨询药剂师。"
+      }
+    ],
+    "cta": {
+      "headline": {
+        "line1": "让孩子每天更健康",
+        "highlight": "从Cellromax开始"
+      },
+      "body": {
+        "line1": "每天一次，小小的习惯",
+        "line2": "为健康成长带来大大的不同。"
+      },
+      "products": {
+        "syrup": "儿童健康糖浆",
+        "stick": "儿童健康糖浆条",
+        "jjayo": "儿童健康挤挤乐"
+      },
+      "buttons": {
+        "findPharmacy": "查找附近药房",
+        "scrollToTop": "回到顶部 ↑"
+      },
+      "trustBadges": {
+        "pharmacyOnly": "药房专售产品",
+        "fromAge1": "1岁以上适用"
+      }
+    }
+  },
+
+  "footer": {
+    "brandTagline": "高端健康解决方案专业品牌",
+    "disclaimer": {
+      "title": "注意事项",
+      "items": [
+        "本产品不是用于预防和治疗疾病的药品。",
+        "临床试验结果是在特定研究条件下观察到的，个人结果可能有所不同。",
+        "服用前请咨询药剂师。",
+        "如属过敏体质，请确认成分后再服用。"
+      ]
+    },
+    "company": {
+      "name": "(株)Cellromax Science | 代表：徐正民",
+      "bizNumber": "营业执照号：125-86-27262 | 通信销售业申报：2018-龙仁器兴-0828",
+      "address": "京畿道龙仁市器兴区九城路357 D栋1层106号 龙仁科技谷（清德洞）",
+      "customerCenter": "客服中心：",
+      "customerCenterHours": "（工作日 09:00~17:00，午休 12:30~13:30 / 周末及法定假日休息）",
+      "emailLabel": "邮箱：",
+      "privacyOfficer": "个人信息保护负责人：梁仁奎",
+      "insurance": "个人信息保护赔偿责任保险(Ⅱ)：梅里茨火灾保险"
+    },
+    "links": {
+      "privacy": "隐私政策",
+      "terms": "使用条款",
+      "bizInfo": "企业信息"
+    },
+    "copyright": "© 2026 Cellromax. All rights reserved."
+  },
+
+  "productInfo": {
+    "sectionTitle": "产品基本信息",
+    "category": "分类",
+    "tabs": {
+      "syrup": "糖浆",
+      "stick": "糖浆条",
+      "jjayo": "挤挤乐"
+    },
+    "rowLabels": {
+      "name": "产品名",
+      "foodType": "食品类型",
+      "manufacturer": "制造商",
+      "ingredients": "原料名及含量",
+      "allergen": "过敏原",
+      "intake": "服用量·服用方法",
+      "caution": "服用注意事项",
+      "storage": "保存方法"
+    },
+    "commonRows": {
+      "gmo": {
+        "label": "转基因",
+        "value": "不涉及"
+      }
+    },
+    "expandButton": {
+      "expand": "查看更多",
+      "collapse": "收起"
+    }
+  },
+
+  "common": {
+    "brandName": "Cellromax",
+    "productLineName": "儿童健康糖浆",
+    "pharmacyOnly": "药房专售",
+    "fromAge1": "1岁以上适用",
+    "findPharmacy": "查找附近药房",
+    "learnMore": "查看详情",
+    "collapse": "收起",
+    "expand": "查看更多"
+  },
+
+  "languageSwitcher": {
+    "label": "语言",
+    "ko": "한국어",
+    "en": "English",
+    "zh": "中文",
+    "vi": "Tiếng Việt"
+  }
+}
