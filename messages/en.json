@@ -6,6 +6,7 @@
     "ogDescription": "Once a day, nourish your child's health with the power of elderberry",
     "keywords": "children's health syrup,Cellromax,elderberry,kids health,pharmacy exclusive,prebiotics,amino acids"
   },
+
   "hero": {
     "badges": {
       "pharmacyOnly": "Pharmacy Only",
@@ -37,6 +38,7 @@
       "jjayo": "Health Syrup Squeeze"
     }
   },
+
   "elderberry": {
     "headline": {
       "line1": "The purple berry Europe has cherished for centuries",
@@ -100,6 +102,7 @@
     },
     "disclaimer": "This information describes the raw ingredient, not the product itself"
   },
+
   "nutrition": {
     "headline": {
       "line1": "Essential nutrition for growing children",
@@ -146,33 +149,19 @@
         "title": "The building blocks of protein: 7 amino acids",
         "body": "A growing child's body creates new cells every day, and amino acids are the foundation. Cellromax contains 7 amino acids including BCAAs (valine, leucine, isoleucine).",
         "detail": "Among them, L-arginine is a semi-essential amino acid known to support healthy development in growing children, and L-glutamine is known as a primary energy source for intestinal mucosal cells.",
-        "tags": [
-          "3 BCAAs",
-          "L-Arginine",
-          "L-Glutamine",
-          "+2 more"
-        ]
+        "tags": ["3 BCAAs", "L-Arginine", "L-Glutamine", "+2 more"]
       },
       "calcium": {
         "title": "Water-soluble calcium — that makes the difference",
         "body": "What matters more than how much calcium you take is how well it's absorbed. Cellromax's water-soluble fermented calcium is 100% water-soluble ionized calcium made by naturally fermenting shells from clean ocean waters.",
         "detail": "Extracted through a fermentation process without chemical solvents, it has a form that is favorable for absorption in the body.",
-        "tags": [
-          "Water-soluble ionized",
-          "Naturally fermented",
-          "Absorption-friendly"
-        ]
+        "tags": ["Water-soluble ionized", "Naturally fermented", "Absorption-friendly"]
       },
       "vitaminBC": {
         "title": "Vitamins B & C from plants",
         "body": "Guava, holy basil, and lemon are rich in B vitamins, while Indian gooseberry is abundant in vitamin C.",
         "detail": "Children can get 6 types of vitamin B (B1, B2, B3, B5, B6, B9) and vitamin C all at once.",
-        "tags": [
-          "Guava",
-          "Holy Basil",
-          "Lemon",
-          "Indian Gooseberry"
-        ]
+        "tags": ["Guava", "Holy Basil", "Lemon", "Indian Gooseberry"]
       }
     },
     "expandButton": {
@@ -180,6 +169,7 @@
       "collapse": "Collapse"
     }
   },
+
   "ingredients": {
     "headline": {
       "line1": "Ingredients from nature,",
@@ -195,14 +185,8 @@
         "detail": "In a multi-center clinical trial on infants supplemented with GOS, growth of bifidobacteria and lactobacilli was promoted while harmful bacteria were suppressed.",
         "citation": "Giovannini et al., J Am Coll Nutr (2014), Multi-center RCT",
         "highlights": {
-          "lactulose": {
-            "label": "Lactulose",
-            "desc": "Nutrient for beneficial gut bacteria"
-          },
-          "gos": {
-            "label": "GOS",
-            "desc": "Galacto-oligosaccharides"
-          }
+          "lactulose": { "label": "Lactulose", "desc": "Nutrient for beneficial gut bacteria" },
+          "gos": { "label": "GOS", "desc": "Galacto-oligosaccharides" }
         }
       },
       "amla": {
@@ -211,14 +195,8 @@
         "body": "Amla, a superfood long used in Indian Ayurveda, is known for its exceptionally high vitamin C content.",
         "detail": "While regular vitamin C (ascorbic acid) is easily destroyed by heat and light, amla's vitamin C remains stable thanks to its natural protective structure bound with gallic acid and tannins.",
         "highlights": {
-          "amla": {
-            "label": "Amla",
-            "desc": "Indian Gooseberry"
-          },
-          "vitaminC": {
-            "label": "Vitamin C",
-            "desc": "Contained in a beneficial structure"
-          }
+          "amla": { "label": "Amla", "desc": "Indian Gooseberry" },
+          "vitaminC": { "label": "Vitamin C", "desc": "Contained in a beneficial structure" }
         }
       },
       "monkfruit": {
@@ -227,14 +205,8 @@
         "body": "Monk Fruit, from the Guilin region of southern China, has been used as a healthful fruit for centuries. It has sweetness 250 times that of sugar, yet with virtually zero calories.",
         "detail": "Because this is a product for children, we chose a healthy ingredient even for the sweetener. Monk fruit has received GRAS (Generally Recognized As Safe) status from the U.S. FDA.",
         "highlights": {
-          "zeroCal": {
-            "label": "Zero Calories",
-            "desc": "250x sweeter than sugar"
-          },
-          "fdaGras": {
-            "label": "FDA GRAS",
-            "desc": "Safety recognized"
-          }
+          "zeroCal": { "label": "Zero Calories", "desc": "250x sweeter than sugar" },
+          "fdaGras": { "label": "FDA GRAS", "desc": "Safety recognized" }
         }
       }
     },
@@ -243,6 +215,7 @@
       "collapse": "Collapse ↑"
     }
   },
+
   "safety": {
     "headline": {
       "line1": "Because it's for children,",
@@ -284,11 +257,9 @@
       },
       "body": "Cellromax Children's Health Syrup is a pharmacy-exclusive product. Please consult with a pharmacist to find the right product and form for your child.",
       "cta": "Find a Pharmacy"
-    },
-    "childrenImage": {
-      "alt": "Children smiling with Almighty Kids Syrup Stick"
     }
   },
+
   "formats": {
     "headline": {
       "line1": "The perfect fit for",
@@ -331,6 +302,7 @@
       "collapse": "Collapse"
     }
   },
+
   "pharmacy": {
     "headline": {
       "line1": "Find it at",
@@ -353,6 +325,7 @@
       "label": "Contact: Customer Center"
     }
   },
+
   "faq": {
     "headline": "Frequently Asked Questions",
     "items": [
@@ -405,6 +378,7 @@
       }
     }
   },
+
   "footer": {
     "brandTagline": "Premium health solution brand",
     "disclaimer": {
@@ -433,6 +407,7 @@
     },
     "copyright": "© 2026 Cellromax. All rights reserved."
   },
+
   "productInfo": {
     "sectionTitle": "Product Information",
     "category": "Category",
@@ -457,43 +432,12 @@
         "value": "Not applicable"
       }
     },
-    "products": {
-      "syrup": {
-        "name": "Cellromax Children's Health Syrup",
-        "foodType": "Mixed Beverage",
-        "manufacturer": "NatureTech Co., Ltd. / 29-8, Yongjeong-gil, Chopyeong-myeon, Jincheon-gun, Chungbuk, Korea",
-        "ingredients": "Purified water, DuOligo (lactulose, galactooligosaccharides), palatinose, elderberry concentrate (Austria), flavoring (natural mixed berry), monk fruit concentrate (China), xanthan gum, lemon concentrate (Israel), amino acid blend [BCAA mix (L-leucine, L-isoleucine, L-valine), L-arginine, L-glutamine, L-methionine, L-alanine], soluble fermented calcium, Indian gooseberry extract, sodium benzoate (preservative), berry juice, VegaB Complex (fruit & vegetable product)",
-        "allergen": "Contains milk, shellfish (oyster)",
-        "intake": "Take 10ml once daily.",
-        "caution": "Please check the recommended intake before consumption. If you have a sensitive constitution or allergies, please check the ingredients before consumption. Sediment may occur due to raw ingredients; this is not a foreign substance — please shake well before use.",
-        "storage": "Store in a cool, dry place away from direct sunlight and high humidity. Refrigerate after opening with the cap tightly closed."
-      },
-      "stick": {
-        "name": "Cellromax Children's Health Syrup Stick",
-        "foodType": "Mixed Beverage",
-        "manufacturer": "Novarex Co., Ltd. / 80, Osong Saengmyeong 14-ro, Osong-eup, Heungdeok-gu, Cheongju-si, Chungbuk, Korea",
-        "ingredients": "Purified water, oligosaccharides (lactulose, galactooligosaccharides), palatinose (purified water, sugar), elderberry concentrate (Austria), natural flavoring (mixed berry), monk fruit concentrate (China), composite Scutellaria extract [Scutellaria concentrate (Korean), licorice concentrate (Korean)], xanthan gum, lemon concentrate, amino acid blend [blend (L-leucine, L-isoleucine, L-valine), L-arginine, L-glutamine, L-methionine, L-alanine], soluble fermented calcium S, Indian gooseberry extract powder, fruit herb extract powder",
-        "allergen": "Contains milk, shellfish (oyster)",
-        "intake": "Take 1 packet once daily.",
-        "caution": "If you have a sensitive constitution or allergies, please check the ingredients before consumption. Be careful of cuts from packaging when opening or consuming the product.",
-        "storage": "Store in a cool, dry place away from direct sunlight and high humidity. After opening, minimize exposure to air."
-      },
-      "jjayo": {
-        "name": "Cellromax Children's Health Jjayo",
-        "foodType": "Other Processed Food",
-        "manufacturer": "NatureTech Co., Ltd. / 29-8, Yongjeong-gil, Chopyeong-myeon, Jincheon-gun, Chungbuk, Korea",
-        "ingredients": "Purified water, other fructose, DuOligo (lactulose, galactooligosaccharides), palatinose, elderberry concentrate (Austria), dextrin, other processed food [agar (Gracilaria: Indonesia)], citric acid, calcium lactate, natural flavoring (natural mixed berry), trisodium citrate, lemon concentrate (Israel), amino acid blend 2 [BCAA mix (leucine, isoleucine, valine), L-arginine, L-glutamine, L-methionine, L-alanine], soluble fermented calcium [fermented calcium (oyster shell: Korean)], Indian gooseberry extract powder (India), berry juice, enzyme-treated stevia, VegaB Complex (fruit & vegetable product)",
-        "allergen": "Contains milk, shellfish (oyster)",
-        "intake": "Take 1 pouch once daily by chewing.",
-        "caution": "Be careful not to cut your hands on the cut edge when opening. Pregnant or nursing women, those with allergies, or those undergoing treatment should consult the place of purchase or consumer consultation office before consumption. Do not swallow whole as it may cause choking — chew thoroughly.",
-        "storage": "Store at room temperature / Refrigeration recommended for better quality."
-      }
-    },
     "expandButton": {
       "expand": "Learn more",
       "collapse": "Collapse"
     }
   },
+
   "common": {
     "brandName": "Cellromax",
     "productLineName": "Children's Health Syrup",
@@ -504,6 +448,7 @@
     "collapse": "Collapse",
     "expand": "Learn more"
   },
+
   "languageSwitcher": {
     "label": "Language",
     "ko": "한국어",

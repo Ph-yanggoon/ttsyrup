@@ -6,6 +6,7 @@
     "ogDescription": "Mỗi ngày một lần, chăm sóc sức khỏe con bạn với sức mạnh của elderberry",
     "keywords": "siro sức khỏe trẻ em,Cellromax,elderberry,sức khỏe trẻ em,nhà thuốc,prebiotic,axit amin"
   },
+
   "hero": {
     "badges": {
       "pharmacyOnly": "Chỉ bán tại nhà thuốc",
@@ -37,6 +38,7 @@
       "jjayo": "Siro Sức Khỏe dạng bóp"
     }
   },
+
   "elderberry": {
     "headline": {
       "line1": "Quả mọng tím được châu Âu gìn giữ hàng trăm năm",
@@ -100,6 +102,7 @@
     },
     "disclaimer": "Thông tin này mô tả nguyên liệu thô, không liên quan trực tiếp đến sản phẩm"
   },
+
   "nutrition": {
     "headline": {
       "line1": "Dinh dưỡng thiết yếu cho giai đoạn tăng trưởng",
@@ -146,33 +149,19 @@
         "title": "Nền tảng của protein: 7 loại axit amin",
         "body": "Cơ thể trẻ đang lớn tạo ra tế bào mới mỗi ngày, và axit amin chính là nền tảng. Cellromax chứa 7 loại axit amin bao gồm BCAA (valine, leucine, isoleucine).",
         "detail": "Trong đó, L-arginine là axit amin bán thiết yếu được biết là hỗ trợ sự phát triển khỏe mạnh ở trẻ đang lớn, và L-glutamine được biết là nguồn năng lượng chính cho tế bào niêm mạc ruột.",
-        "tags": [
-          "BCAA 3 loại",
-          "L-Arginine",
-          "L-Glutamine",
-          "+2 loại"
-        ]
+        "tags": ["BCAA 3 loại", "L-Arginine", "L-Glutamine", "+2 loại"]
       },
       "calcium": {
         "title": "Canxi hòa tan trong nước — sự khác biệt",
         "body": "Điều quan trọng hơn việc uống nhiều canxi là khả năng hấp thụ tốt. Canxi lên men hòa tan của Cellromax là canxi ion hóa 100% hòa tan trong nước, được tạo ra bằng cách lên men tự nhiên vỏ sò từ vùng biển sạch.",
         "detail": "Được chiết xuất chỉ qua quy trình lên men không sử dụng dung môi hóa học, có dạng thuận lợi cho việc hấp thụ trong cơ thể.",
-        "tags": [
-          "Ion hóa hòa tan",
-          "Lên men tự nhiên",
-          "Dễ hấp thụ"
-        ]
+        "tags": ["Ion hóa hòa tan", "Lên men tự nhiên", "Dễ hấp thụ"]
       },
       "vitaminBC": {
         "title": "Vitamin B & C từ thực vật",
         "body": "Ổi, húng quế thánh và chanh giàu vitamin nhóm B, trong khi lý gai Ấn Độ chứa nhiều vitamin C.",
         "detail": "Trẻ em có thể bổ sung cùng lúc 6 loại vitamin B (B1, B2, B3, B5, B6, B9) và vitamin C.",
-        "tags": [
-          "Ổi",
-          "Húng quế thánh",
-          "Chanh",
-          "Lý gai Ấn Độ"
-        ]
+        "tags": ["Ổi", "Húng quế thánh", "Chanh", "Lý gai Ấn Độ"]
       }
     },
     "expandButton": {
@@ -180,6 +169,7 @@
       "collapse": "Thu gọn"
     }
   },
+
   "ingredients": {
     "headline": {
       "line1": "Nguyên liệu từ thiên nhiên,",
@@ -195,14 +185,8 @@
         "detail": "Trong thử nghiệm lâm sàng đa trung tâm trên trẻ sơ sinh được bổ sung GOS, sự phát triển của bifidobacteria và lactobacilli được thúc đẩy trong khi vi khuẩn có hại bị ức chế.",
         "citation": "Giovannini et al., J Am Coll Nutr (2014), RCT đa trung tâm",
         "highlights": {
-          "lactulose": {
-            "label": "Lactulose",
-            "desc": "Dinh dưỡng cho vi khuẩn có lợi"
-          },
-          "gos": {
-            "label": "GOS",
-            "desc": "Galacto-oligosaccharide"
-          }
+          "lactulose": { "label": "Lactulose", "desc": "Dinh dưỡng cho vi khuẩn có lợi" },
+          "gos": { "label": "GOS", "desc": "Galacto-oligosaccharide" }
         }
       },
       "amla": {
@@ -211,14 +195,8 @@
         "body": "Amla, siêu thực phẩm được sử dụng từ lâu trong y học Ayurveda Ấn Độ, nổi tiếng với hàm lượng vitamin C cực kỳ cao.",
         "detail": "Trong khi vitamin C thông thường (axit ascorbic) dễ bị phá hủy bởi nhiệt và ánh sáng, vitamin C trong amla giữ ổn định nhờ cấu trúc bảo vệ tự nhiên liên kết với axit gallic và tannin.",
         "highlights": {
-          "amla": {
-            "label": "Amla",
-            "desc": "Lý gai Ấn Độ"
-          },
-          "vitaminC": {
-            "label": "Vitamin C",
-            "desc": "Chứa trong cấu trúc có lợi"
-          }
+          "amla": { "label": "Amla", "desc": "Lý gai Ấn Độ" },
+          "vitaminC": { "label": "Vitamin C", "desc": "Chứa trong cấu trúc có lợi" }
         }
       },
       "monkfruit": {
@@ -227,14 +205,8 @@
         "body": "La hán quả, đến từ vùng Quế Lâm miền nam Trung Quốc, đã được sử dụng như một loại quả có lợi cho sức khỏe từ hàng thế kỷ. Có độ ngọt gấp 250 lần đường nhưng gần như không có calo.",
         "detail": "Vì đây là sản phẩm cho trẻ em, chúng tôi chọn nguyên liệu lành mạnh ngay cả cho chất tạo ngọt. La hán quả đã được FDA Hoa Kỳ cấp chứng nhận GRAS (Được công nhận là an toàn).",
         "highlights": {
-          "zeroCal": {
-            "label": "Không calo",
-            "desc": "Ngọt gấp 250 lần đường"
-          },
-          "fdaGras": {
-            "label": "FDA GRAS",
-            "desc": "An toàn được công nhận"
-          }
+          "zeroCal": { "label": "Không calo", "desc": "Ngọt gấp 250 lần đường" },
+          "fdaGras": { "label": "FDA GRAS", "desc": "An toàn được công nhận" }
         }
       }
     },
@@ -243,6 +215,7 @@
       "collapse": "Thu gọn ↑"
     }
   },
+
   "safety": {
     "headline": {
       "line1": "Vì đây là cho trẻ em,",
@@ -284,11 +257,9 @@
       },
       "body": "Cellromax Siro Sức Khỏe Trẻ Em là sản phẩm chỉ bán tại nhà thuốc. Vui lòng tham khảo ý kiến dược sĩ để chọn sản phẩm và dạng bào chế phù hợp nhất cho con bạn.",
       "cta": "Tìm nhà thuốc gần nhất"
-    },
-    "childrenImage": {
-      "alt": "Trẻ em mỉm cười cầm sản phẩm Almighty Kids Syrup Stick"
     }
   },
+
   "formats": {
     "headline": {
       "line1": "Phù hợp với lối sống của bé",
@@ -331,6 +302,7 @@
       "collapse": "Thu gọn"
     }
   },
+
   "pharmacy": {
     "headline": {
       "line1": "Tìm tại",
@@ -353,6 +325,7 @@
       "label": "Liên hệ: Trung tâm khách hàng"
     }
   },
+
   "faq": {
     "headline": "Câu hỏi thường gặp",
     "items": [
@@ -405,6 +378,7 @@
       }
     }
   },
+
   "footer": {
     "brandTagline": "Thương hiệu giải pháp sức khỏe cao cấp",
     "disclaimer": {
@@ -433,6 +407,7 @@
     },
     "copyright": "© 2026 Cellromax. All rights reserved."
   },
+
   "productInfo": {
     "sectionTitle": "Thông tin sản phẩm",
     "category": "Phân loại",
@@ -457,43 +432,12 @@
         "value": "Không áp dụng"
       }
     },
-    "products": {
-      "syrup": {
-        "name": "Cellromax Siro Sức Khỏe Trẻ Em",
-        "foodType": "Đồ uống hỗn hợp",
-        "manufacturer": "NatureTech Co., Ltd. / 29-8, Yongjeong-gil, Chopyeong-myeon, Jincheon-gun, Chungbuk, Hàn Quốc",
-        "ingredients": "Nước tinh khiết, DuOligo (lactulose, galactooligosaccharide), palatinose, chiết xuất elderberry cô đặc (Áo), hương liệu (hương berry tự nhiên), chiết xuất la hán quả cô đặc (Trung Quốc), xanthan gum, chiết xuất chanh cô đặc (Israel), hỗn hợp [BCAA mix (L-leucine, L-isoleucine, L-valine), L-arginine, L-glutamine, L-methionine, L-alanine], canxi lên men hòa tan, chiết xuất quả lý gai Ấn Độ, natri benzoat (chất bảo quản), nước ép berry, VegaB Complex (sản phẩm rau quả)",
-        "allergen": "Chứa sữa, động vật có vỏ (hàu)",
-        "intake": "Uống 10ml mỗi ngày 1 lần.",
-        "caution": "Vui lòng kiểm tra liều lượng khuyến nghị trước khi sử dụng. Người có cơ địa nhạy cảm hoặc dị ứng vui lòng kiểm tra thành phần trước khi sử dụng. Cặn có thể xuất hiện do nguyên liệu thô — đây không phải tạp chất, vui lòng lắc đều trước khi uống.",
-        "storage": "Bảo quản nơi khô ráo, tránh ánh nắng trực tiếp và nơi nóng ẩm. Sau khi mở nắp, đậy kín và bảo quản trong tủ lạnh."
-      },
-      "stick": {
-        "name": "Cellromax Siro Sức Khỏe Trẻ Em dạng gói",
-        "foodType": "Đồ uống hỗn hợp",
-        "manufacturer": "Novarex Co., Ltd. / 80, Osong Saengmyeong 14-ro, Osong-eup, Heungdeok-gu, Cheongju-si, Chungbuk, Hàn Quốc",
-        "ingredients": "Nước tinh khiết, oligosaccharide (lactulose, galactooligosaccharide), palatinose (nước tinh khiết, đường), chiết xuất elderberry cô đặc (Áo), hương liệu tự nhiên (hương berry), chiết xuất la hán quả cô đặc (Trung Quốc), chiết xuất Hoàng cầm phức hợp [chiết xuất Hoàng cầm cô đặc (Hàn Quốc), chiết xuất cam thảo cô đặc (Hàn Quốc)], xanthan gum, chiết xuất chanh cô đặc, hỗn hợp [hỗn hợp (L-leucine, L-isoleucine, L-valine), L-arginine, L-glutamine, L-methionine, L-alanine], canxi lên men hòa tan S, bột chiết xuất quả lý gai Ấn Độ, bột chiết xuất thảo mộc trái cây",
-        "allergen": "Chứa sữa, động vật có vỏ (hàu)",
-        "intake": "Uống 1 gói mỗi ngày 1 lần.",
-        "caution": "Người có cơ địa nhạy cảm hoặc dị ứng vui lòng kiểm tra thành phần trước khi sử dụng. Cẩn thận vết cắt từ bao bì khi mở hoặc sử dụng sản phẩm.",
-        "storage": "Tránh ánh nắng trực tiếp, bảo quản nơi khô ráo, mát mẻ. Sau khi mở, hạn chế tiếp xúc với không khí."
-      },
-      "jjayo": {
-        "name": "Cellromax Jjayo Sức Khỏe Trẻ Em",
-        "foodType": "Thực phẩm chế biến khác",
-        "manufacturer": "NatureTech Co., Ltd. / 29-8, Yongjeong-gil, Chopyeong-myeon, Jincheon-gun, Chungbuk, Hàn Quốc",
-        "ingredients": "Nước tinh khiết, fructose khác, DuOligo (lactulose, galactooligosaccharide), palatinose, chiết xuất elderberry cô đặc (Áo), dextrin, thực phẩm chế biến khác [thạch (rong biển: Indonesia)], axit citric, canxi lactate, hương liệu tự nhiên (hương berry tự nhiên), natri citrate, chiết xuất chanh cô đặc (Israel), hỗn hợp 2 [BCAA mix (leucine, isoleucine, valine), L-arginine, L-glutamine, L-methionine, L-alanine], canxi lên men hòa tan [canxi lên men (vỏ hàu: Hàn Quốc)], bột chiết xuất quả lý gai Ấn Độ (Ấn Độ), nước ép berry, stevia xử lý enzyme, VegaB Complex (sản phẩm rau quả)",
-        "allergen": "Chứa sữa, động vật có vỏ (hàu)",
-        "intake": "Ngày 1 lần, mỗi lần 1 gói, nhai kỹ trước khi nuốt.",
-        "caution": "Cẩn thận không bị cắt tay khi mở bao bì. Phụ nữ mang thai, cho con bú, người có cơ địa dị ứng hoặc đang điều trị vui lòng tham khảo nơi mua hoặc bộ phận tư vấn trước khi sử dụng. Không nuốt nguyên miếng vì có thể gây nghẹn — vui lòng nhai kỹ.",
-        "storage": "Bảo quản ở nhiệt độ phòng / Bảo quản lạnh sẽ tốt hơn."
-      }
-    },
     "expandButton": {
       "expand": "Xem thêm",
       "collapse": "Thu gọn"
     }
   },
+
   "common": {
     "brandName": "Cellromax",
     "productLineName": "Siro Sức Khỏe Trẻ Em",
@@ -504,6 +448,7 @@
     "collapse": "Thu gọn",
     "expand": "Xem thêm"
   },
+
   "languageSwitcher": {
     "label": "Ngôn ngữ",
     "ko": "한국어",

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import {
   useScrollAnimation,
@@ -96,12 +95,6 @@ export default function SafetyCerts() {
     duration: 0.8,
   });
 
-  const imageRef = useScrollAnimation<HTMLDivElement>({
-    from: { opacity: 0, y: 36, scale: 0.97 },
-    duration: 1,
-    delay: 0.15,
-  });
-
   const safetyRef = useScrollAnimation<HTMLDivElement>({
     from: { opacity: 0, y: 30 },
     duration: 0.9,
@@ -189,22 +182,6 @@ export default function SafetyCerts() {
               </p>
             </div>
           ))}
-        </div>
-
-        {/* ── Children Image ── */}
-        <div
-          ref={imageRef}
-          className="mb-12 lg:mb-16 rounded-3xl overflow-hidden shadow-lg mx-auto max-w-[640px]"
-        >
-          <Image
-            src="/images/children-with-product.jpg"
-            alt={t("childrenImage.alt")}
-            width={1200}
-            height={1489}
-            sizes="(max-width: 640px) 100vw, 640px"
-            className="w-full h-auto"
-            quality={85}
-          />
         </div>
 
         {/* ── Safety Evidence + Pharmacy Section ── */}
